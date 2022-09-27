@@ -2,7 +2,6 @@
 
 /**
  * main: void
- *
  * Description: Print size
  * Return: 0
  */
