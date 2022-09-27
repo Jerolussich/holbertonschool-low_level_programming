@@ -1,2 +1,0 @@
-#!/bin/bash
-gcc -E name_of_file -o $CFILE
