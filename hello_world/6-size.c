@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-int main()
+int main(void)
 {
 	int integerType;
 	float floatType;
@@ -15,11 +15,11 @@ int main()
 	char charType;
 	long long int tripleType;
 
-	printf("Size of char: %ld byte\n", sizeof(charType));
-	printf("Size of int: %ld bytes\n", sizeof(integerType));
-	printf("Size of double: %ld bytes\n", sizeof(doubleType));
-	printf("Size of long long %ld byte\n", sizeof(tripleType));
-	printf("Size of float: %ld bytes\n", sizeof(floatType));
+	printf("Size of char: %ld byte(s)\n", sizeof(charType));
+	printf("Size of int: %ld bytes(s)\n", sizeof(integerType));
+	printf("Size of double: %ld bytes(s)\n", sizeof(doubleType));
+	printf("Size of long long %ld byte(s)\n", sizeof(tripleType));
+	printf("Size of float: %ld bytes(s)\n", sizeof(floatType));
 
-	return(0);
+	return (0);
 }
