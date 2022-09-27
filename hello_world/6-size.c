@@ -6,7 +6,7 @@
  *
  * Description: Print size
  * Return: 0
- **/
+ */
  
 int main(void)
 
