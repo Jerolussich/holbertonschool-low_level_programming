@@ -1,2 +1,9 @@
-#!/bin/bash
-gcc $text puts (\"Programming is like building a multilingual puzzle)
+#include<stdio.h>
+
+int main (){
+
+	put("Programming is like building a multilingual puzzle\)
+
+	return 0;
+
+}
