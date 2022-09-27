@@ -22,5 +22,5 @@ int main(void)
 	printf(sizeof(doubleType));
 	printf(sizeof(charType));
 
-	return=(0);
+	return(0);
 }
