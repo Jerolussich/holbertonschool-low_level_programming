@@ -12,9 +12,9 @@ int main()
 {
 	int integerType;
 	float floatType;
-	double doubleType;
+	long int doubleType;
 	char charType;
-	triple tripleType;
+	long long int tripleType;
 
 	printf("Size of char: %ld byte\n",sizeof(charType));
 	printf("Size of int: %ld bytes\n",sizeof(integerType));
