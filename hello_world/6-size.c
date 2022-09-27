@@ -19,7 +19,7 @@ int main()
 	printf("Size of char: %ld byte\n",sizeof(charType));
 	printf("Size of int: %ld bytes\n",sizeof(integerType));
 	printf("Size of double: %ld bytes\n",sizeof(doubleType));
-	printf("Size of long long int\n",sizeof(tripleType));
+	printf("Size of long long %ld byte\n",sizeof(tripleType));
 	printf("Size of float: %ld bytes\n",sizeof(floatType));
 
 	
