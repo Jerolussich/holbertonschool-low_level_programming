@@ -2,7 +2,9 @@
 
 int main(void)
 {
-code
+/**
+ * Main- Entry point
+ */
 }	
 {
 
