@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  *
@@ -13,7 +13,7 @@ int main(void)
 {
 
 	int integerType;
-	float floattype;
+	float floatType;
 	double doubleType:
 	Char charType;
 
