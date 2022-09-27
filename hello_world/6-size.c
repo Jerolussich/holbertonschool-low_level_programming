@@ -17,5 +17,5 @@ int main(void)
 	double doubleType:
 	Char charType;
 
-	return=(0)
+	return=(0);
 }
