@@ -14,8 +14,13 @@ int main(void)
 
 	int integerType;
 	float floatType;
-	double doubleType:
+	double doubleType;
 	Char charType;
+
+	printf(sizeof(intType));
+	printf(sizeof(floatType));
+	printf(sizeof(doubleType));
+	printf(sizeof(charType));
 
 	return=(0);
 }
