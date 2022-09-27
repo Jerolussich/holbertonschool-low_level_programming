@@ -15,7 +15,7 @@ int main(void)
 	int integerType;
 	float floatType;
 	double doubleType;
-	Char charType;
+	char charType;
 
 	printf(sizeof(intType));
 	printf(sizeof(floatType));
