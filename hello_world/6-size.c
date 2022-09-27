@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main: void
  *
  * Description: Print size
@@ -16,13 +15,11 @@ int main()
 	char charType;
 	long long int tripleType;
 
-	printf("Size of char: %ld byte\n",sizeof(charType));
-	printf("Size of int: %ld bytes\n",sizeof(integerType));
-	printf("Size of double: %ld bytes\n",sizeof(doubleType));
-	printf("Size of long long %ld byte\n",sizeof(tripleType));
-	printf("Size of float: %ld bytes\n",sizeof(floatType));
+	printf("Size of char: %ld byte\n", sizeof(charType));
+	printf("Size of int: %ld bytes\n", sizeof(integerType));
+	printf("Size of double: %ld bytes\n", sizeof(doubleType));
+	printf("Size of long long %ld byte\n", sizeof(tripleType));
+	printf("Size of float: %ld bytes\n", sizeof(floatType));
 
-	
-			    
-	 return(0);
+	return(0);
 }
