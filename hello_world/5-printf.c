@@ -1,15 +1,17 @@
-#include<studio.h>
- 
+include<stdio.h>
+
 /**
- * main: void
- *
- * Description: A code using printf
- */ 
- 
+ * main- Entry point
+ *  
+ * Description: Print number
+ * Return: Return
+ */
+
 int main(void)
 
 {
-	printf("with proper grammar, but the outcome is a piece of art,");
-}
 
-	return(0);
+	        puts("\"Programming is like building a multilingual puzzle");
+
+		        return (0);
+}
