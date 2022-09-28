@@ -3,7 +3,6 @@
 #include <time.h>
 /*
  * main - void
- * Description: Get number
  * Return: Number
  */
 
