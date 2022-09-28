@@ -2,13 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * Description: Number
  * main - void
  * Return: Number
  */
 
 	int main(void)
-{
+	{
 	int n;
 
 	srand(time(0));
