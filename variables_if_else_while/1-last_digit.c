@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /*
+ * Description: Number
  * main - void
  * Return: Number
  */
