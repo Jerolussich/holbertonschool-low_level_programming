@@ -28,7 +28,7 @@ int main(void)
 	else (n < 0)
 	{
 	printf=("last digit of %D is %d and is less than 6", n, lastdigit
-
+	}
 	last digit = n% 10;
 
 	return (0);
