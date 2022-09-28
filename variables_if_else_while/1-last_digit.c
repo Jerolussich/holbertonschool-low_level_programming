@@ -6,7 +6,8 @@
  * Description: Get number
  * Return: Number
  */
-int main(void)
+
+	int main(void)
 {
 	int n;
 
