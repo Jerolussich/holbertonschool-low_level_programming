@@ -4,7 +4,7 @@
 /**
  * main - void
  * Description: Print and add
- *
+ * Return: n
  */
 int main(void)
 	{
@@ -27,5 +27,5 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	return (n);
+	return (0);
 }
