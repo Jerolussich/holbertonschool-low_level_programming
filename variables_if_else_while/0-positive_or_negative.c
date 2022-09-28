@@ -23,7 +23,7 @@ int main(void)
 	printf("is zero");
 	}
 
-	else
+	if (n < 0)
 	{
 	printf("is negative");
 	}
