@@ -14,14 +14,14 @@ int main(void)
 	{
 		putchar(n);
 		
-		if( != 9)
+		if(n != 9)
 		{
 			putchar(44);
 			putchar(' ');
 		}
 
 	}
-		putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
