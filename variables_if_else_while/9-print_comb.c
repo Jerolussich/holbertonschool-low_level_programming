@@ -13,7 +13,7 @@ int main(void)
 	for (n = '0'; n <= '9'; n++)
 	{
 		putchar(n);
-		putchar(20)
+		putchar(20);
 
 		if (n != 9)
 		putchar(44);
