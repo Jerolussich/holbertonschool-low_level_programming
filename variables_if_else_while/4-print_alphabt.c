@@ -11,7 +11,6 @@
 {
 
 	char ch = 'a';
-	char CH = 'A';
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 
