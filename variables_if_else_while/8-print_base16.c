@@ -12,9 +12,10 @@ int main(void)
 
 	char n;
 
-	for (n = '0'; n <= '15'; n++)
-
+	for (n = '0'; n <= 'f'; n++)
+	{
 	putchar(n);
+	}
 
 	return (0);
 }
