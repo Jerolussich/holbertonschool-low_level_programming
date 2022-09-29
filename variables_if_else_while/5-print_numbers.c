@@ -13,11 +13,16 @@
 	int n = '0';
 
 	for (n = '0'; n <= '9'; n++)
+	{
+	if (n > 9)
+	{
+	}
 
+	else
 	{
 	printf("%d", n);
 	}
-
+	}
 	printf("\n");
 
 	return (0);
