@@ -14,8 +14,14 @@ int main(void)
 
 	for (n = '0'; n <= 'f'; n++)
 	{
-	putchar(n);
+		if ('9' < n <= '`';)
+
+		else
+		putchar(n)
+
 	}
+
+	putchar('\n');
 
 	return (0);
 }
