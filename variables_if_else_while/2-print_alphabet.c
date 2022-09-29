@@ -10,12 +10,13 @@
 
 {
 
-	char ch = "a"
+	char ch = 'a';
 
-		for (ch = "a"; ch <= "z"; ch++)
-		{
-		putchar("%c\t", ch)
-		}
+	for (ch = 'a'; ch <= 'z'; ch++)
+
+	{
+		putchar("%c\t", ch);
+	}
 
 	return (0);
 }
