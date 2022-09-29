@@ -16,8 +16,8 @@
 
 	{
 		putchar(ch);
-		putchar();
 	}
 
+	putchar("\n");
 	return (0);
 }
