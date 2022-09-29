@@ -15,7 +15,7 @@
 	for (ch = 'a'; ch <= 'z'; ch++)
 
 	{
-		putchar("%c\t", ch);
+		putchar(ch);
 	}
 
 	return (0);
