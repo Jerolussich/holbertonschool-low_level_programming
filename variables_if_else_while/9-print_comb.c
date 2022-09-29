@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main - void
- * Return: all base numbers of 16
+ * Return: all numbers 1 to 9
  */
 
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 	for (n = '0'; n <= '9'; n++)
 	{
 		putchar(n);
-		putchar(" ");
+		putchar(' ');
 
 		if (n != 9)
 		putchar(44);
