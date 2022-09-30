@@ -12,8 +12,9 @@ int _islower(int c)
 	
 	char ch
 	
-	if (ch >= '65' && ch <= '90')
-		
-		return (0);
+		_islower(ch)
+	}
+
+	
 
 
