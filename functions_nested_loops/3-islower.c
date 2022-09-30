@@ -10,6 +10,6 @@ int _islower(int c)
 	
 {
 		
-	_islower(ch) 
+	_islower(c) 
 		
 }
