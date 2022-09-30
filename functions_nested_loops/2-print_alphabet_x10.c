@@ -16,7 +16,7 @@ void print_alphabet_x10(void)
 
 	{
 
-	if (; ch <= 'z'; ch++)
+	for (; ch <= 'z'; ch++)
 
 		_putchar(ch);
 	}
