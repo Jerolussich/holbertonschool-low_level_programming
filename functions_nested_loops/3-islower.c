@@ -9,8 +9,7 @@
 int _islower(int c)
 	
 {
-	
-	char ch
-	
-	_islower(ch);
+		
+	_islower(ch) 
+		
 }
