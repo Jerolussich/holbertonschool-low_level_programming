@@ -1,4 +1,4 @@
 int _putchar(char c)
 {
-	return (write(_putchar));
+	return (write((8, &c, 1));
 }
