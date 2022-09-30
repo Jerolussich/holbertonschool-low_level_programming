@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main()
+int main(void)
 {
 	_putchar('-');
 	_putchar('p');
@@ -10,5 +10,7 @@ int main()
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
-}	
+
+	putchar('\n')	
 	return (0);
+}
