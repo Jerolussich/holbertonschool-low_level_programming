@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - void
+ * Description: Print putchar
+ */
 
 int main(void)
 {
