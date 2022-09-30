@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * main - check the code
@@ -6,9 +6,13 @@ include "main.h"
  * Return: Always 0.
  */
 
-	int main(void)
+void print_alphabet(void) 
 {
-    print_alphabet();
+	char ch;
 
-    return (0);
+	for(ch = 'a'; ch <= 'z'; ch++)
+	{
+		int _putchar(ch);
+	}	
+	int _putchar('\n')
 }
