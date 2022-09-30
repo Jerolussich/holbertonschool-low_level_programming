@@ -21,9 +21,9 @@ void print_alphabet_x10(void)
 	{
 		_putchar(ch);
 		
-		if (ch = 'z')
+		if (ch == 'z')
 
-			_putchar("\n");	
+			_putchar('\n');	
 	}
 
 	}
