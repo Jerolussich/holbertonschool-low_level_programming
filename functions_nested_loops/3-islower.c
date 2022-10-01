@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _islower(int c) - Check lowercase
+ * _islower - Check lowercase
+ * @c: variable that stores value
  * Description: Check lowercase
  * Return: 1 lowercase, 0 othercase
  */
