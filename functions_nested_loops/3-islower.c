@@ -7,8 +7,7 @@
  */
 
 
-	int _islower(int c);
-
+int _islower(int c)
 {
 
 	if ( 65 <= c && c >= 90)
