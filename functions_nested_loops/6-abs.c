@@ -11,5 +11,5 @@
 int int_abs(int)
 {
 
-	abs();	
+	int_abs();	
 }
