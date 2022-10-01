@@ -8,8 +8,8 @@
  */
 
 
-int _abs(int)
+int _abs(int a)
 {
 
-	_abs();	
+	_abs(a);	
 }
