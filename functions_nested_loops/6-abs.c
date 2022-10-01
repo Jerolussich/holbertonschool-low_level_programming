@@ -11,5 +11,5 @@
 int _abs(int a)
 {
 
-	printf(_abs(a));	
+	printf("%d", _abs(a));	
 }
