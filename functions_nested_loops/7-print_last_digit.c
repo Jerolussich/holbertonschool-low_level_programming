@@ -7,7 +7,7 @@
  */
 
 
-int _lastdigit(int a)
+int print_last_digit(int a)
 {	
 	int n = a % 10;
 
