@@ -11,5 +11,5 @@
 int _abs(int a)
 {
 
-	return (_abs(a));	
+	printf(_abs(a));	
 }
