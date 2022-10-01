@@ -2,13 +2,15 @@
 
 /**
  * int _islower(int c) - Check lowercase
- * Description: Check loewrcase
+ * Description: Check lowercase
  *
  */
 
 int _islower(int c)
 {	
-	
-	( _islower(c));
+	int c;
+
+	if ( '65' <= c && c >= '90')
+		return 0;
 		
 }		
