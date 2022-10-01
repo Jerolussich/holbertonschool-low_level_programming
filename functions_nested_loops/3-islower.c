@@ -7,6 +7,8 @@
  */
 
 int _islower(int c)
+{	
 	
-	_islower(c);
+	( _islower(c));
 		
+}		
