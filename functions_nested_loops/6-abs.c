@@ -1,7 +1,7 @@
 #include "main.h"
-
+#include "stdio.h"
 /**
- * int_abs - print the sign of a number
+ * _abs - print absolute of number
  * @int: variable that stores value
  * Description: Print absolute number
  * Return: absolute number
@@ -11,5 +11,5 @@
 int _abs(int a)
 {
 
-	_abs(a);	
+	return (abs(a));	
 }
