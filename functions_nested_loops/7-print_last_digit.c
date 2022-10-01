@@ -9,9 +9,9 @@
 
 int _lastdigit(int a)
 {	
+	int n = a % 10;
 
-	printf("%d", a % 10;);
 
-		return (0);
+		return (n);
 
 }
