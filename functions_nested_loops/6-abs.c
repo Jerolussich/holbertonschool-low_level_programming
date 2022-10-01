@@ -9,7 +9,6 @@
 
 
 int _abs(int a)
-{
 
-	printf("%d", a);	
-}
+
+	printf("%d", a);
