@@ -9,8 +9,7 @@
 
 int _lastdigit(int a)
 {	
-	int n
-	
+
 	printf("%d", a % 10;);
 
 		return (0);
