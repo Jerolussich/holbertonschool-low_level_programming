@@ -1,0 +1,32 @@
+#include "main.h"
+/**
+ * times_table - print all minutes of the day
+ * Description: Print table of 9
+ * Return: table of 9
+ */
+
+
+void times_table(void)
+{
+	int I = 0;
+	int N = 9;
+	int R = 0;
+
+	while (I <= 9)
+	{
+		int R = (n * I);
+
+		if (I <= 1)
+		{
+			_putchar((R % 10) + '0');
+			_putchar('\n');
+			I++;
+
+
+		else (I >= 9)
+			_putchar((R / 10) + '0');
+			_putchar((R % 10) + '0');
+			I++;
+		}
+
+}
