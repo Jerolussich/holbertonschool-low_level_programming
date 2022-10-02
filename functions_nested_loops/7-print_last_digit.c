@@ -14,7 +14,7 @@ int print_last_digit(int a)
 	if (n > 0)
 	{
 		_putchar('0' + n);
-		_putchar("\n");
+		_putchar('\n');
 		return (n);
 	}
 	else if (n < 0)
