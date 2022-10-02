@@ -23,6 +23,8 @@ int print_last_digit(int a)
 		return (n);
 	}
 	else
+	{
 		_putchar(n);
 		return (0);
+	}
 }
