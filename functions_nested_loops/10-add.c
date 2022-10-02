@@ -2,6 +2,7 @@
 /**
  * add - sum number
  * @a: stores value
+ * @b: stores value
  * Description: adds two integers
  * Return: sum of integer
  */
