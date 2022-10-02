@@ -18,11 +18,11 @@ void jack_bauer(void)
 		
 		while (M < 60)
 		{
-		if(H<10){
+		if (H < 10){
 		_putchar('0');
 		}	
 		_putchar(H);
-		_putchar(':')
+		_putchar(':');
 		if (M < 10)
 		{
 		_putchar('0');
@@ -33,4 +33,4 @@ void jack_bauer(void)
 	H++;
 
 	}
-]
+}
