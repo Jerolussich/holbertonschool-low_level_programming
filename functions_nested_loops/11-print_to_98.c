@@ -11,8 +11,10 @@ void print_to_98(int n)
 	
 	int n
 
-	if (n > 0 && 98 < n)
+	while (n >= 0 && 98 <= n)
 		
 		printf("%d", n);
+		n++
+
 
 }
