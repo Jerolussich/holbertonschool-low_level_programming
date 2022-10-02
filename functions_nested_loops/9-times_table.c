@@ -14,7 +14,7 @@ void times_table(void)
 
 	while (I <= 9)
 	{
-		int R = (n * I);
+		int R = (N * I);
 
 		if (I <= 1)
 		{
@@ -22,8 +22,8 @@ void times_table(void)
 			_putchar('\n');
 			I++;
 
-
 		else (I >= 9)
+
 			_putchar((R / 10) + '0');
 			_putchar((R % 10) + '0');
 			I++;
