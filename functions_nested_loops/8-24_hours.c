@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * jack_bauer - print all minutes of the day
- * @n: variable that stores value
+ * @H: variable that stores value
  * Description: Print last digit of a number
  * Return: last digit
  */
@@ -14,8 +14,8 @@ void jack_bauer(void)
 
 	while (H < 24)
 	{
-	M = 0;	
-		
+	M = 0;
+
 		while (M < 60)
 		{
 		_putchar((H / 10) + '0');
@@ -29,4 +29,3 @@ void jack_bauer(void)
 	H++;
 	}
 }
-
