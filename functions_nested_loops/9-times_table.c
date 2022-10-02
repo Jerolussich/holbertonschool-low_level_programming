@@ -30,17 +30,15 @@ void times_table(void)
 				_putchar((bm % 10) + '0');
 				m++;
 			}
-			if (m == 10)
-			{
-				_putchar('\n');
-			}
 			if (m <= 9)
 			{
 			_putchar(',');
 			_putchar(' ');
 			}	
 		}
-	i++;
-	b++;
+		
+		_putchar('\n')
+		i++;
+		b++;
 	}
 }
