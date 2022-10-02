@@ -18,7 +18,7 @@ void times_table(void)
 	int m = 0;
 
 		while (m <= 10)
-		
+		{
 			if (m <= 9)
 			{
 			_putchar(b);
@@ -33,9 +33,11 @@ void times_table(void)
 			{
 			_putchar(b + b);
 			}
-	_putchar('\n')
-	b = 0
-	i++
-	b++
+		}
+
+	_putchar('\n');
+	b = 0;
+	i++;
+	b++;
 	}
 }
