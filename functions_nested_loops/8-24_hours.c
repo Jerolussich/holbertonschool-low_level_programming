@@ -1,8 +1,6 @@
 #include "main.h"
 /**
  * jack_bauer - print all minutes of the day
- * @H: variable that stores value
- * @M: Variable that stores value
  * Description: Print last digit of a number
  * Return: Clock
  */
