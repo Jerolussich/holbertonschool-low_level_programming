@@ -12,7 +12,7 @@ void times_table(void)
 	int b = 0;
 	int m = 0;
 
-	while (i <= 10)
+	while (i < 10)
 	{
 	
 		m = 0;
@@ -22,7 +22,7 @@ void times_table(void)
 			int bm = b * m;
 
 			if (bm <= 9)
-			{
+			{	_putchar(' ');
 				_putchar(bm + '0');
 				m++;
 			}
