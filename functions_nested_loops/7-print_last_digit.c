@@ -25,5 +25,4 @@ int print_last_digit(int a)
 	}
 	else
 		return (0);
-	}
 }
