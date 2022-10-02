@@ -9,8 +9,8 @@
 
 void jack_bauer(void)
 {
-	int H = 0
-	int M = 0
+	int H = 0;
+	int M = 0;
 
 	while (H < 23)
 	{
