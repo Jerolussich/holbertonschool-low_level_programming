@@ -22,8 +22,12 @@ void times_table(void)
 			int bm = b * m;
 
 			if (bm <= 9)
-			{	_putchar(' ');
+			{
+				if (m !=0)
+					_putchar(' ');
 				_putchar(bm + '0');
+
+
 				m++;
 			}
 			if (bm >= 10)
