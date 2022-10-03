@@ -4,4 +4,3 @@ OBJ=*.o
 NAME=school
 all: $(NAME)
 school: $(SRC)
-	
