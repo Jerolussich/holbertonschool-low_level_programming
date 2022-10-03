@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _isupper - check lower and upper case
+ * c: variable that stores value
  * Description: check lower and upper case
  * Return: 1 lowercase, 0 othercase
  **/
