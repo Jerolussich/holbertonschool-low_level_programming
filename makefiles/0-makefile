@@ -1,0 +1,2 @@
+school:
+	$(CC) -o school
