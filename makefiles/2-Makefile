@@ -2,7 +2,5 @@ CC=gcc
 SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
 NAME=school
-.o: .c m.h
-	$(CC) $^(OBJ) -o $@
 all: $(OBJ)
-	$(CC) $^(SRC) $^(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
