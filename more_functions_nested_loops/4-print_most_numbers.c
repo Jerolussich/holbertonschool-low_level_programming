@@ -8,9 +8,9 @@
 
 void print_numbers(void)
 {
-	int n
+	int n = 0
 
-	for (n = '0'; n < 10; n++)
+	for (; n < 10; n++)
 	{
 		if (n != 2 || 4 =! n)
 	
