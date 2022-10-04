@@ -20,7 +20,7 @@ void print_line(int n)
 					
 					if (n > p)
 					{
-						_putchar('92');
+						_putchar(92);
 						p++;
 					}
 			}
