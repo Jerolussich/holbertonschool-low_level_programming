@@ -12,15 +12,16 @@ void print_triangle(int size)
 	int s = 1;
 	int bs = 1;
 	int p = 0;
-	int sp = 0;
+	int sp = size;
 
 	while (i < size)
 	{
-		sp = 0;
-			while (sp != p)
+		
+
+			while (sp > 0)
 			{
 				_putchar(' ');
-				s++;
+				sp--;
 			}	
 			while (s >= bs)
 			{
