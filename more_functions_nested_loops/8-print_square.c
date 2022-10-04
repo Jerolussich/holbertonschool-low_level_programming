@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_square - print diagonal with spaces
- * @n: variable that stores value
- * Description: print numbers 14 times
+ * print_square - print square
+ * @size: variable that stores value
+ * Description: print square
  * Return: 0
  **/
 
@@ -18,6 +18,7 @@ void print_square(int size)
 		while (size > p)
 		{
 			_putchar('#');
+			_putchar(' ');
 			p++;
 		}
 	i++;
