@@ -30,7 +30,11 @@ void print_diagonal(int n)
 					_putchar('\n');
 					p++;
 				}
-
+				if (n < p)
+				{
+					_putchar('\n');
+					p = 0;
+				}
 	}
 				
 }
