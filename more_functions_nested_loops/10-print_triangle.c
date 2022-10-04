@@ -11,16 +11,22 @@ void print_triangle(int size)
 	int i = 0;
 	int s = 1;
 	int bs = 1;
+	int p = 0;
+	int sp = 0;
 
 	while (i < size)
 	{
+		s = 0;
+			while (sp != p)
+			{
+				_putchar(' ');
+				s++;
 		
-
-		while (s >= bs)
-		{
-			_putchar('#');
-			bs++;
-		}
+			while (s >= bs)
+			{
+				_putchar('#');
+				bs++;
+			}
 
 
 
