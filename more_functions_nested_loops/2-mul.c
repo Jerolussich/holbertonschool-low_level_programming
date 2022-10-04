@@ -2,7 +2,7 @@
 /**
  * mul - multiply two integers
  * @a: variable that stores value
- * @B: variable that stores value
+ * @b: variable that stores value
  * Description: multiply two integers
  * Return: 0
  **/
