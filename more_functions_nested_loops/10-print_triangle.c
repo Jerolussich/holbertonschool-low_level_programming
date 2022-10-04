@@ -8,7 +8,6 @@
 
 void print_square(int size)
 {
-	int p = 0;
 	int i = 0;
 	int s = 1;
 	int bs = 1;
@@ -18,9 +17,10 @@ void print_square(int size)
 
 		{
 			while (s >= bs)
-
+			{
 				_putchar('#');
 				bs++;
+			}
 		}
 
 
