@@ -9,15 +9,25 @@
 void print_line(int n)
 {
 	int p = 0;
+	int s = 0;
 
 	while (p < n)
 	{
-		if (n > p)
-		{
-		_putchar('92');
-		p++;
+			while (n > s)
+			{
+				_putchar(' ');
+				s++;
+					
+					if (n > p)
+					{
+						_putchar('92');
+						p++;
+					}
+			}
+				
 
-		}
+	}
+
 	{
 
 	_putchar('\n');
