@@ -28,6 +28,7 @@ void print_triangle(int size)
 	i++;
 	s++;
 	s++;
+	s++;
 
 	}
 	if (size <= 0)
