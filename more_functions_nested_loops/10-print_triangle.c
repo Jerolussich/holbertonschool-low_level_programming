@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_triangule - print triangule
+ * print_triangle - print triangle
  * @size: variable that stores value
  * Description: print square
  * Return: 0
  **/
 
-void print_triangule(int size)
+void print_triangle(int size)
 {
 	int i = 0;
 	int s = 1;
