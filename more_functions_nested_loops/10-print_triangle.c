@@ -1,0 +1,38 @@
+#include "main.h"
+/**
+ * print_square - print square
+ * @size: variable that stores value
+ * Description: print square
+ * Return: 0
+ **/
+
+void print_square(int size)
+{
+	int p = 0;
+	int i = 0;
+	int s = 1;
+	int bs = 1;
+
+	while (i < size)
+	{
+
+		{
+			while (s >= bs)
+
+				_putchar('#');
+				bs++;
+		}
+
+
+	_putchar('\n');
+	i++;
+	s++;
+	s++;
+
+	}
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+
+}
