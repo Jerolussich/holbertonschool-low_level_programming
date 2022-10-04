@@ -11,7 +11,6 @@ void print_triangle(int size)
 	int i = 0;
 	int s = 1;
 	int bs = 1;
-	int sp = size;
 
 	while (i < size)
 	{
