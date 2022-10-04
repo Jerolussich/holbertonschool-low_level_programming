@@ -12,11 +12,11 @@ void print_most_numbers(void)
 
 	for (; n < 10; n++)
 	{
-		if (n != '2' && '4' != n)
+		if (n != '2' && '4' =! n)
 		{
 			_putchar(n + '0');
 		}
 	}
 		_putchar('\n');
-	
+
 }
