@@ -18,7 +18,7 @@ int main(void)
 		{
 			printf("fizzbuzz ");	
 		}
-		if (n % 3 == 0)
+		else if (n % 3 == 0)
 		{
 			printf("fizz ");
 		}
