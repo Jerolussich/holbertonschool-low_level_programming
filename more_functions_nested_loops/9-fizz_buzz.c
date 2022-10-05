@@ -5,11 +5,11 @@
  * Description: print 1 to 100
  **/
 
-int main(int n)
+int main(void)
 
 {
-
-	while (n > 1 && 100 > n)
+	int n=1
+	while (n => 1 && 100 > n)
 	
 		if (n % 3 == 0)
 		{
@@ -24,9 +24,11 @@ int main(int n)
 		else if (n % 15 == 0)
 		{
 			printf("fizzbuzz ", n);
+			n++;
 		}
 		else
 		{
 			printf("%d ", n);
+			n++
 		}
 }
