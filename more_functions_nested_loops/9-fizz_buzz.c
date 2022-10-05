@@ -3,7 +3,7 @@
 /**
  * main - print 1 to 100
  * Description: print 1 to 100
- * return: numbers 1 to 100
+ * Return: numbers 1 to 100
  **/
 
 int main(void)
