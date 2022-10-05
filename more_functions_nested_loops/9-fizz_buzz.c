@@ -16,12 +16,12 @@ int main(int n)
 			printf("fizz ", n);
 			n++;
 		}
-		if (n % 5 == 0)
+		else if (n % 5 == 0)
 		{
 			printf("Buzz ", n);
 			n++;
 		}
-		if (n % 15 == 0)
+		else if (n % 15 == 0)
 		{
 			printf("fizzbuzz ", n);
 		}
