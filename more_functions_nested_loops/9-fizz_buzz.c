@@ -11,6 +11,7 @@ int main(void)
 	int n = 1;
 
 	while (n < 100)
+	{
 	
 		if (n % 15 == 0)
 		{
@@ -30,4 +31,5 @@ int main(void)
 			
 		}
 		n++;
+	}
 }
