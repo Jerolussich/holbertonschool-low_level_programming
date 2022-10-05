@@ -8,15 +8,17 @@
 int main(void)
 
 {
+	int n
+
 	while (n > 1 && 100 > n)
 	
-		if (i % 3 == 0)
+		if (n % 3 == 0)
 			printf("fizz ", n);
 			n++;
-		if (i % 5 == 0)
+		if (n % 5 == 0)
 			printf("Buzz ", n);
 			n++;
-		if (i % 15 == 0)
+		if (n % 15 == 0)
 			printf("fizzbuzz ", n);
 		else
 			printf("%d ", n);
