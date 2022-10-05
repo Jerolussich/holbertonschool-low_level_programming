@@ -5,7 +5,7 @@
  * Description: print 1 to 100
  **/
 
-void main(void)
+int main(void)
 
 {
 
@@ -32,4 +32,5 @@ void main(void)
 			
 		}
 	}
+	return (0);
 }
