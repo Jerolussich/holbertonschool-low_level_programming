@@ -5,10 +5,9 @@
  * Description: print 1 to 100
  **/
 
-int main(void)
+int main(int n)
 
 {
-	int n
 
 	while (n > 1 && 100 > n)
 	
@@ -22,3 +21,4 @@ int main(void)
 			printf("fizzbuzz ", n);
 		else
 			printf("%d ", n);
+}
