@@ -5,7 +5,7 @@
  * Description: print 1 to 100
  **/
 
-int main(void)
+void main(void)
 
 {
 
