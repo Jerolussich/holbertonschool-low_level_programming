@@ -8,27 +8,26 @@
 int main(void)
 
 {
-	int n=1
-	while (n => 1 && 100 > n)
+	int n = 1;
+
+	while (n < 100)
 	
+		if (n % 15 == 0)
+		{
+			printf("fizzbuzz ");	
+		}
 		if (n % 3 == 0)
 		{
-			printf("fizz ", n);
-			n++;
+			printf("fizz ");
 		}
 		else if (n % 5 == 0)
 		{
-			printf("Buzz ", n);
-			n++;
-		}
-		else if (n % 15 == 0)
-		{
-			printf("fizzbuzz ", n);
-			n++;
+			printf("Buzz ");
 		}
 		else
 		{
 			printf("%d ", n);
-			n++
+			
 		}
+		n++;
 }
