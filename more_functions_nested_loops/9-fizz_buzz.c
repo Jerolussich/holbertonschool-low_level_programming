@@ -7,9 +7,10 @@
 
 int main(void)
 
-	int n = 1;
+{
+	int n
 
-	while (n < 100)
+	for (n = 1; n < 100; n++)
 	{
 	
 		if (n % 15 == 0)
@@ -29,5 +30,5 @@ int main(void)
 			printf("%d ", n);
 			
 		}
-		n++;
 	}
+}
