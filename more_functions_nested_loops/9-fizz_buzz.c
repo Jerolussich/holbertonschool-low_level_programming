@@ -5,10 +5,9 @@
  * Description: print 1 to 100
  **/
 
-int main(void)
+int main(int n)
 
 {
-	int n
 
 	for (n = 1; n < 100; n++)
 	{
