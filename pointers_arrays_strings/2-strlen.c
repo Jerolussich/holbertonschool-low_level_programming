@@ -8,10 +8,13 @@
 
 int _strlen(char *s)
 {
+	int sum = 0
+
 	while (*s != '\o')
-	{
-		*s++;
+	{	
+		sum++;	
+		s++;
 	}
 
-	return (*s);
+	return (sum);
 }
