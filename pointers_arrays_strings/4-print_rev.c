@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _puts - print char
- * @str: stores a value
+ * print_rev - print char in reverse
+ * @s: stores a value
  * Return: returns sums of string
  **/
 
@@ -16,11 +16,11 @@ void print_rev(char *s)
 		s++;
 		r++;
 	}
-	while (r > 0)
-	{
-	_putchar(*s);
-	r--;
-	}
+		while (r > 0)
+		{
+		_putchar(*s);
+		r--;
+		}
 
 _putchar('\n');
 
