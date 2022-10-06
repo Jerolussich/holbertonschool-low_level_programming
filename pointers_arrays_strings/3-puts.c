@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts - count a string
+ * _puts - print char
  * @str: stores a value
  * Return: returns sums of string
  **/
