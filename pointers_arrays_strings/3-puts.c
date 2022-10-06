@@ -8,6 +8,7 @@
 
 void _puts(char *str)
 {
+	int s = o;
 
 	while (*str != '\0')
 	{
