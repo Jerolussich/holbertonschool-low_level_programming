@@ -2,7 +2,8 @@
 
 /**
  * reset_to_98 - set number using pointer
- * @n: stores a value
+ * @a: stores a value
+ * @b: stores a value
  **/
 
 void swap_int(int *a, int *b)
