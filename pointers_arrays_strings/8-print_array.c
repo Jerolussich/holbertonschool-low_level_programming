@@ -15,13 +15,13 @@ void print_array(int *a, int n)
 
 	for (; n > r ; r++)
 	{
-		if (n != r)
-		{
-		printf("%d, ", a[r]);
-		}
 		if (r == n - 1)
 		{
 			printf("%d", a[r]);
+		}
+		else 
+		{
+		printf("%d, ", a[r];
 		}
 	}
 
