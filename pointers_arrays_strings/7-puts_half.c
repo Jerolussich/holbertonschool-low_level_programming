@@ -33,14 +33,14 @@ void puts_half(char *str)
 	}
 	if (r % 2 != 0)
 	{
-		str* = str* - n;
+		str = str - n;
 
-		while (n > 0)
-		{
-			_putchar(*str);
-			str++;
-			n--;
-		}
+			while (n > 0)
+			{
+				_putchar(*str);
+				str++;
+				n--;
+			}
 	}
-	_putchar('\n');
+		_putchar('\n');
 }
