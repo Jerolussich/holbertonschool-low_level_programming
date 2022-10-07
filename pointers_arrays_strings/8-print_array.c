@@ -13,9 +13,14 @@ void print_array(int *a, int n)
 	 int r = 0;
 
 
-	for (; n > r ; r++)
+	for (; n >= r ; r++)
 	{
-		printf("%d,", a[r]);
+		printf("%d, ", a[r]);
+		
+		if (n == r)
+		{
+			printf("%d", a[r];
+		}
 	}
 
 
