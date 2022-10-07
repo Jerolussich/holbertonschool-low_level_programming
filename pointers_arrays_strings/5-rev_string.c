@@ -13,7 +13,7 @@ void rev_string(char *s)
 	int n = 0;
 	char *dest = 0;
 
-	for (i = 0; s[i] != NULL; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
 
@@ -24,4 +24,5 @@ void rev_string(char *s)
 		dest[n] = s[i];
 		n++;
 	}
+	s = dest;
 }
