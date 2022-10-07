@@ -17,7 +17,7 @@ void print_array(int *a, int n)
 	{
 		if (n != r)
 		{
-		printf("%d, ", a[r])i;
+		printf("%d, ", a[r]);
 		}
 		if (n == r)
 		{
