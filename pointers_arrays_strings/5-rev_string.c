@@ -13,15 +13,14 @@ void rev_string(char *s)
 	char *dest;
 	int n = 0;
 
-	for (; src[r] != '\0'; r++)
+	for (; s[r] != '\0'; r++)
 	{
 	}
 
-	for (; src[r] != '\0'; r--)
+	for (; r == 0; r--)
 	{
 		dest[n] = src[r];
 		n++;
 	}
-
-
+		s = src;
 }
