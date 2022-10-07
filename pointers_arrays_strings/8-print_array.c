@@ -19,12 +19,13 @@ void print_array(int *a, int n)
 		{
 			printf("%d", a[r]);
 		}
-		else 
+		else
 		{
 			printf("%d, ", a[r]);
 		}
 	}
-_putchar('\n');
+
+printf('\n');
 
 
 }
