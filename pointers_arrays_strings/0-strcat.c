@@ -12,7 +12,8 @@ char *_strcat(char *dest, char *src)
 
 	int r = 0;
 	int n = 0;
-	int temp;
+	int rs = 0;
+	int ptr;
 
 	for (; dest[r] != '\0'; r++)
 	{
@@ -20,11 +21,15 @@ char *_strcat(char *dest, char *src)
 	for (; src[n] != '\0'; n++)
 	{
 	}
-	for (; n == 0 ; n--)
+	for (; r == 0 ; r--)
 	{
-		temp = src[n];
-		dest[r] = temp;
-		r++;
+		ptr = dest[r];
+		rs++;
+	}
+	for (; n == 0; n--)
+	{
+		ptr[rs] = src[n];
+		n--;
 	}
 
 	dest[r] = '\0';
