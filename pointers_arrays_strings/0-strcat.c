@@ -12,8 +12,8 @@ char *_strcat(char *dest, char *src)
 
 	int r = 0;
 	int n = 0;
-	int *ptr = 0;
-	int ptrl = 0;
+	int *p = 0;
+	int pl = 0;
 
 	for (; dest[r] != '\0'; r++)
 	{
@@ -24,12 +24,12 @@ char *_strcat(char *dest, char *src)
 	}
 	for (; r == 0 ; r--)
 	{
-		ptr[ptrl] = dest[r];
-		ptrl++;
+		p[pl] = dest[r];
+		pl++;
 	}
 	for (; n == 0 ; n--)
 	{
-		ptr[ptrl + n] = src[n];
+		p[pl + n] = src[n];
 		n--;
 	}
 
