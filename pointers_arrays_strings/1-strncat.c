@@ -18,11 +18,12 @@ char *_strncat(char *dest, char *src, int n)
 	{
 	}
 
-	for (; n != j; && src[i] != '\0'; j++)
+	for (; n > i; && src[i] != '\0'; j++)
 	{
 		dest[i] = src[j];
 		i++;
 	}
-
+	
+	
 	return (dest);
 }
