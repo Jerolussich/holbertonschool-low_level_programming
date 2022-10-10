@@ -14,17 +14,16 @@ char *_strncat(char *dest, char *src, int n)
 	int j = 0;
 
 
-	if (*src == "" && *dest == "")
-
-		return ('\0');
-
 	for (; dest[i] != '\0'; i++)
 	{
 	}
+
 	for (; n != j; j++)
 	{
 		dest[i] = src[j];
 		i++;
 	}
+	dest[i + j] = '\0';
+
 	return (dest);
 }
