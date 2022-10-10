@@ -16,6 +16,10 @@ char *_strncat(char *dest, char *src, int n)
 	for (; dest[i] != '\0'; i++)
 	{
 	}
+	
+	if (*src == '\0' && *dest == '\0')
+	
+		return ('\0');
 
 	for (; n != j; j++)
 	{
