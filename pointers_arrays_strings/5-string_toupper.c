@@ -2,8 +2,7 @@
 #include <stdio.h>
 /**
  * string_toupper - lower case to uppercase
- * @n: length of string
- * @a: pointer
+ * @dest: pointer
  * Return: 0
  **/
 
@@ -18,5 +17,6 @@ char *string_toupper(char *dest)
 		{
 			dest[i] = dest[i -32];
 		}
-	}	
+	}
+	return (0);	
 }
