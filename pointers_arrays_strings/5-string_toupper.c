@@ -18,5 +18,5 @@ char *string_toupper(char *dest)
 			dest[i] = dest[i -32];
 		}
 	}
-	return (0);	
+	return (dest);	
 }
