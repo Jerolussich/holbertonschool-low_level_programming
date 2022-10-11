@@ -2,9 +2,8 @@
 
 /**
  * _strcmp - concatenate a string
- * @dest: stores a string
- * @src: stores a string
- * @n: stores a number of bytes
+ * @s1: pointer of a string
+ * @s2: pointers of a string
  * Return: pointer to string dest
  **/
 
@@ -18,7 +17,7 @@ int _strcmp(char *s1, char *s2)
 	}
 	if (s1[i] != s2[i])
 	{
-		return ((s1[i] -s2[i]));
+		return ((s1[i] - s2[i]));
 	}
 	else
 	{
