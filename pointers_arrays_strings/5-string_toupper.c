@@ -15,8 +15,8 @@ char *string_toupper(char *dest)
 	{
 		if (dest[i] >= 'a' && 'z' <= dest[i])
 		{
-			dest[i] = dest[i -32];
+			dest[i] = dest[i] - 32;
 		}
 	}
-	return (dest);	
+	return (dest);
 }
