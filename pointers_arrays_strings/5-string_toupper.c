@@ -14,9 +14,9 @@ char *string_toupper(char *dest)
 
 	for (i = 0; dest[i] != '\0'; i++)
 	{
-		if (dest[i] >= 'a' && 'z' =< dest[i])
+		if (dest[i] >= 'a' && 'z' <= dest[i])
 		{
-			dest[i] = [i -32];
+			dest[i] = dest[i -32];
 		}
 	}	
 }
