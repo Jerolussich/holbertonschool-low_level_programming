@@ -19,7 +19,7 @@ char *leet(char *dest)
 
 		for (j = 0; j < 5; j++)
 		{
-			if (dest[i] == s2[j] || dest[i] == s2[j] - 32) 
+			if (dest[i] == s2[j] || dest[i] == s2[j] - 32)
 			{
 				dest[i] = s3[j];
 			}
