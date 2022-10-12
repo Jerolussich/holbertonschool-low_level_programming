@@ -16,7 +16,7 @@ char *cap_string(char *dest)
 	{
 		r = 0;
 
-		for (; s2[j] = '\0'; r++)
+		for (; s2[j] = '\0'; j++)
 		{
 			if (dest[i] = s2[j])
 			{
@@ -28,6 +28,5 @@ char *cap_string(char *dest)
 
 		i++;
 	}
-
-
+	return (dest);
 }
