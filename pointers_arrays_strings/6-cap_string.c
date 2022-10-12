@@ -20,7 +20,7 @@ char *cap_string(char *dest)
 		{
 			if (dest[i] == s2[j])
 			{
-				dest[i + 1] = dest[i] - 32;
+				dest[i + 1] = dest[i + 1] - 32;
 			}
 
 			j++;
