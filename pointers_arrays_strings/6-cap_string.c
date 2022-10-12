@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * cap_string - reverse a string
+ * cap_string - capitalizes all words of a string
  * @dest: holds a string
  * Return: 0
  **/
