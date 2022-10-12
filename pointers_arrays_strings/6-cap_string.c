@@ -19,6 +19,11 @@ char *cap_string(char *dest)
 
 		for (; s2[j] != '\0'; j++)
 		{
+			if (dest[0] >= 'a' && 'z' >= dest[0])
+			{
+				dest[0] = dest[0] - 32;
+			}
+
 			if (dest[i] == s2[j])
 			{
 				if (dest[i + 1] >= 'a' && 'z' >= dest[i + 1])
