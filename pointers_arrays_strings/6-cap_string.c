@@ -27,10 +27,8 @@ char *cap_string(char *dest)
 				}
 			}
 
-			j++;
 		}
 
-		i++;
 	}
 	return (dest);
 }
