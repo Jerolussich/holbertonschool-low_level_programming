@@ -11,7 +11,7 @@ char *cap_string(char *dest)
 {
 	int i;
 	int j;
-	char s2[] = {' ', '\0', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}','	'};
+	char s2[] = {' ', '\0', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}',9};
 
 	for (i = 0; dest[i] != '\0'; i++)
 	{
@@ -23,7 +23,7 @@ char *cap_string(char *dest)
 			{
 				if (dest[i + 1] >= 'a' && 'z' >= dest[i + 1])
 				{
-					dest[i + 1] = dest[i + 1] - 32;
+					dest[i + 1] = (dest[i + 1] - 32);
 				}
 			}
 
