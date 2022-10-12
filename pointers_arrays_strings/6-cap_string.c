@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * cap_string - reverse a string
- * @s: pointer
+ * @dest: holds a string
  * Return: 0
  **/
 
@@ -11,8 +11,8 @@ char *cap_string(char *dest)
 {
 	int i;
 	int j;
-	char s2[] = {' ', '\0', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-	for (i = 0; dest[i] ; i++)
+	char s2[] = {' ', '\0', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'}	
+	for (i = 0; dest[i] != '\0'; i++)
 	{
 		j = 0;
 
