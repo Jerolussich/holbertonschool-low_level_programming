@@ -9,9 +9,7 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i = 0;
-
-	for (;*s != c, s++)
+	for (;*s != c; s++)
 	{
 	}
 	
