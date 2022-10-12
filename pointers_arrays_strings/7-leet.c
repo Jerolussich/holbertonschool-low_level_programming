@@ -12,7 +12,7 @@ char *leet(char *dest)
 	int i;
 	int j;
 	char s2[] = {65, 69, 79, 84, 76, 97, 101, 111, 116, 124};
-	char s3[] = {0,1,3,4,7);
+	char s3[] = {0,1,3,4,7};
 
 	for (i = 0; dest[i] != '\0'; i++)
 	{
