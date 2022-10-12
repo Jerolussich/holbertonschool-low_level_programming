@@ -23,7 +23,7 @@ char *cap_string(char *dest)
 				dest[i + 1] = dest[i] - 32;
 			}
 
-			r++;
+			j++;
 		}
 
 		i++;
