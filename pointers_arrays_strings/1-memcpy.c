@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _memset - fill memory with constante byte
+ * _memcpy - fill memory with constante byte
  * @dest: pointer
  * @src: pointer
  * @n: bytes from area src
