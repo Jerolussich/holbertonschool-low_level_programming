@@ -13,7 +13,7 @@ void print_diagsums(int *a, int size)
 	int sum1 = 0;
 	int acum = 0;
 
-	for(i = 0; i < ((size*size) / (size - 1)); i++)
+	for(i = 0; i < ((size*size - 1) / (size - 1)); i++)
 	{
 		if (i == 0)
 		{
