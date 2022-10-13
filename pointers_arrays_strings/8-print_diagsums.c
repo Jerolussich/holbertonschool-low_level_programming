@@ -30,7 +30,7 @@ void print_diagsums(int *a, int size)
 	}
 	for(i = size - 1; i < (size*size); i-= 1)
 	{
-		sum -= a[i]
+		sum -= a[i];
 	}
 
 	printf("%d, ", sum1);
