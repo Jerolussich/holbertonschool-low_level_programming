@@ -28,6 +28,10 @@ void print_diagsums(int *a, int size)
 	{
 		sum += a[j];
 	}
+	for(i = size - 1; i < (size*size); i-= 1)
+	{
+		sum -= a[i]
+	}
 
 	printf("%d, ", sum1);
 	printf("%d", sum);
