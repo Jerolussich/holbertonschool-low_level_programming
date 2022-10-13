@@ -9,6 +9,7 @@
 void print_diagsums(int *a, int size)
 {
 	int i;
+	int j;
 	int sum = 0;
 	int sum1 = 0;
 
@@ -24,6 +25,11 @@ void print_diagsums(int *a, int size)
 			sum1 = sum1 + a[i*(size + 1)];
 		}
 	}
+	for (j = 0; j < (size*size); j+= size + 1)
+	{
+		sum += a[j];
+	}
+
 	printf("%d, ", sum1);
 	printf("%d", sum);
 	printf("\n");
