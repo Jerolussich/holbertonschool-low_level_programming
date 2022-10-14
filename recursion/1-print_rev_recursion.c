@@ -27,6 +27,7 @@ int j = 0;
 	{
 		_putchar(*s);
 		j--;
+		s--;
 		_print_rev_recursion(s);
 		
 	}
