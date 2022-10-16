@@ -6,16 +6,23 @@
  */
 int _sqrt_recursion(int n)
 {
-
-	if (n < 0)
+	_sqrt_recursion(n);
+	return (n);
+}
+int _sqrt_recursion2(int i, int n)
+{
+	
+	if (i == n)
 	{
 		return (-1);
 	}
 
-	else if (n == 0)
+	else if (i * i == n)
 	{
-		return (0);
+		return (n);
 	}
 	else
-		return (n / _sqrt_recursion(n));
+	{
+		return (_sqrt_recursion2(i + 1, n));
+	}
 }
