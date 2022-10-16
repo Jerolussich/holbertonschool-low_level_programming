@@ -6,12 +6,16 @@
  */
 int _sqrt_recursion(int n)
 {
-	_sqrt_recursion(n);
-	return (n);
+	return (_sqrt_recursion2(1 , n));
 }
+/**
+ * _sqrt_recursion2 - find square root
+ * @i: base
+ * return: square root or -1
+ **/
 int _sqrt_recursion2(int i, int n)
 {
-	
+
 	if (i == n)
 	{
 		return (-1);
@@ -19,7 +23,7 @@ int _sqrt_recursion2(int i, int n)
 
 	else if (i * i == n)
 	{
-		return (n);
+		return (i);
 	}
 	else
 	{
