@@ -22,7 +22,7 @@ int is_prime_number2(int i, int n)
 	}
 	else if (n == 1)
 	{
-		return (1);
+		return (0);
 	}
 
 	else if (n % i != 0)
