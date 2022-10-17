@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void print_name(int argc, char *argv[])
+void print_name(char *argv[])	
 {
 
 	printf("%s", argv[0]);
