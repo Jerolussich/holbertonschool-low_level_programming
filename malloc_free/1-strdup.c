@@ -2,10 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * create_array - creates an array of chars and init with specific
- * @size: size of array
- * @c: char init
- * Return: null or pointer
+ * _strdup - creates an array of chars and init with specific
+ * @str: string
+ * Return: null or new pointer
  */
 
 char *_strdup(char *str)
@@ -16,10 +15,8 @@ char *_strdup(char *str)
 
 	if (*str != '\0')
 	{
-		for (j = 0; str[j] != '\0'; j++)
-		{
-		}
-		
+		for (j = 0; str[j] != '\0'; j++);
+
 		p = malloc(sizeof(char) * (j + 1));
 
 		if (p == NULL)
@@ -34,6 +31,7 @@ char *_strdup(char *str)
 		return (p);
 
 	}
-	return ('\0');
+	else
+		return ('\0');
 
 }
