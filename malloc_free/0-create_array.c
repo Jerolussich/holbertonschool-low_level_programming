@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * create_array - creates an array of chars and init with specific
- * @size - size of array
- * @char - char init
+ * @size: size of array
+ * @c: char init
  * Return: null or pointer
  */
 
@@ -25,6 +25,6 @@ char *create_array(unsigned int size, char c)
 		return (p);
 	}
 	else
-		return (p);
+		return (NULL);
 
 }
