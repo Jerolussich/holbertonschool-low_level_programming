@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	unsigned int i;
 	unsigned int j;
 
-	if (*str != '\0')
+	if (str)
 	{
 		for (j = 0; str[j] != '\0'; j++);
 
@@ -31,7 +31,6 @@ char *_strdup(char *str)
 		return (p);
 
 	}
-	else
-		return ('\0');
+		return (NULL);
 
 }
