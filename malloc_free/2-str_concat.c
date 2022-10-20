@@ -13,6 +13,16 @@ char *str_concat(char *s1, char *s2)
 	char *p = NULL;
 	unsigned int i = 0, j = 0, l = 0;
 	unsigned int k = 0;
+		
+		if (*s1 == NULL)
+		{
+			*s1 = "";
+		}
+		if (*s2 == NULL)
+		{
+			*s2 = "";
+		}
+
 
 		for (; s1[j]; j++)
 			;
@@ -24,22 +34,19 @@ char *str_concat(char *s1, char *s2)
 		{
 			return (NULL);
 		}
-		if (*s1 != '\0')
+	
+		for (; i < j; i++)
 		{
-			for (; i < j; i++)
-			{
-				p[i] = s1[i];
-			}
+			p[i] = s1[i];
+		}
 		}
 
-		if (*s2 != '\0')
+		for (; i < j + k; i++)
 		{
-			for (; i < j + k; i++)
-			{
-				p[i] = s2[l];
-				l++;
-			}
+			p[i] = s2[l];
+			l++;
 		}
+		
 		p[i] = '\0';
 
 		return (p);
