@@ -24,15 +24,21 @@ char *str_concat(char *s1, char *s2)
 		{
 			return (NULL);
 		}
-		for (; i < j; i++)
+		if (*s1 != NULL)
 		{
-			p[i] = s1[i];
+			for (; i < j; i++)
+			{
+				p[i] = s1[i];
+			}
 		}
 
-		for (; i < j + k; i++)
+		if (*s2 != NULL)
 		{
-			p[i] = s2[l];
-			l++;
+			for (; i < j + k; i++)
+			{
+				p[i] = s2[l];
+				l++;
+			}
 		}
 		p[i] = '\0';
 
