@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _str_concat - concatenates two strings
+ * str_concat - concatenates two strings
  * @s1: pointer of a string
  * @s2: pointer of a string
  * Return: null or new pointer
@@ -27,15 +27,20 @@ char *str_concat(char *s1, char *s2)
 		{
 			return (NULL);
 		}
-
-		for (i = 0; i < j; i++)
+		if (j != 0)
 		{
-			p[i] = s1[i];
+			for (i = 0; i < j; i++)
+			{
+				p[i] = s1[i];
+			}
 		}
-
-		for (i = i + 1; i < j + k; i++)
+	
+		if (i =! 0)
 		{
-			p[i] = s2[i];
+			for (i = i + 1; i < j + k; i++)
+			{
+				p[i] = s2[i];
+			}
 		}
 
 		return (p);
