@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * str_concat - concatenates two strings
- * @s1: pointer of a string
- * @s2: pointer of a string
- * Return: null or new pointer
+ * alloc_grid - return a pointer to a 2 dimensional array
+ * @width: int width array
+ * @height: int height array
+ * Return: null or pointer
  */
 
 int **alloc_grid(int width, int height)
@@ -32,9 +32,10 @@ int **alloc_grid(int width, int height)
 		if (*p == NULL)
 		{
 			return (NULL);
+			free(*p);
 		}
-		
-		for (;i < height; i++)
+
+		for (; i < height; i++)
 		{
 			p[i][j] = 0;
 
