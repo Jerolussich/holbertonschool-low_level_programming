@@ -33,10 +33,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[j] = s1[j];
 	if (s2[0])
 	{
-		for (k = 0; p[j]; j++, k++)
+		if (i > n)
 		{
-			p[j] = s2[k];
+			for (k = 0;k < n ; j++, k++)
+			{
+				p[j] = s2[k];
+			}
 		}
+		else if (n > i)
+			
+			for (; p[j]; j++)
+			{
+				p[j] = s2[j];
+			}
 	}
 		p[j] = '\0';
 	return (p);
