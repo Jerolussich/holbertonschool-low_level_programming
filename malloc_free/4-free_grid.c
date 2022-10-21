@@ -11,11 +11,7 @@
 void free_grid(int **grid, int height)
 {
 	int i = 0;
-	int **grid = 0;
-	int width;
-
-	grid[i] = malloc(sizeof(int) * width);
-		
+	
 	if (grid[i] == NULL)
 	{
 		for (i = i - 1; i >= 0; i--)
