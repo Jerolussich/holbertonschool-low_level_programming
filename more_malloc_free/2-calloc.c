@@ -4,16 +4,15 @@
 #include <string.h>
 
 /**
- * *calloc - function that allocates memory for an array 
- * @n: holds an int value
+ * calloc - function that allocates memory for an array
  * @nmemb: array of elements
  * @size: byte size of elements
- * Return: returns pointer of malloc
+ * Return: returns pointer of calloc
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *p;
+	char *p = NULL;
 	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
@@ -21,12 +20,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 	p = malloc(sizeof(size) * nmemb);
-	
-	for (i = 0; p[i]; i++)
-		memset(p, 0, (size * nmemb));
+
 	if (p == NULL)
 	{
 		return (NULL);
 	}
+	for (i = 0; p[i]; i++)
+		memset(p, 0, (size * nmemb));
 	return (p);
 }
