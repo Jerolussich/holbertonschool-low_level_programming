@@ -8,7 +8,7 @@
  i Return: null or pointer
  */
 
-void free_grid(int **grid, int height);
+void free_grid(int **grid, int height)
 {
 
 	p[i] = malloc(sizeof(int) * width);
