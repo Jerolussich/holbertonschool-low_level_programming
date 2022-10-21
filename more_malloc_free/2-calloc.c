@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * calloc - function that allocates memory for an array
+ * _calloc - function that allocates memory for an array and sets it
  * @nmemb: array of elements
  * @size: byte size of elements
  * Return: returns pointer of calloc
