@@ -3,9 +3,9 @@
 #include <stdlib.h>
 /**
  * free_grid - free 2 dimensional grid.
- * @width: int width array
- * @height: int height array
- i Return: null or pointer
+ * @height: int height of dynamic array
+ * @grid: pointer to dynamic array
+ * Return: null or pointer
  */
 
 void free_grid(int **grid, int height)
