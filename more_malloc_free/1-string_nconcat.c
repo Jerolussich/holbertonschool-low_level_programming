@@ -35,14 +35,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		if (i > n)
 		{
-			for (k = 0;k < n ; j++, k++)
+			for (k = 0; k < n ; j++, k++)
 			{
 				p[j] = s2[k];
 			}
 		}
 		else if (n > i)
-			
-			for (; p[j]; j++)
+
+			for (; s2[j]; j++)
 			{
 				p[j] = s2[j];
 			}
