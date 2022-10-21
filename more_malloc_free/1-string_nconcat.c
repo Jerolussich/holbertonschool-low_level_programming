@@ -4,7 +4,9 @@
 
 /**
  * *string_nconcat - function taht allocates memory using malloc
- * @b: holds an int value
+ * @n: holds an int value
+ * @s2: string 2
+ * @s1: string 1
  * Return: returns pointer of malloc
  */
 
@@ -24,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= i)
 		p = malloc(l + i + 1);
 	if (n < i)
-		p = malloc(l + n);
+		p = malloc(l + n + 1);
 	if (p == NULL)
 	{
 		return (NULL);
