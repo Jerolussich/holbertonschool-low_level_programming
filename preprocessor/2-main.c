@@ -1,7 +1,7 @@
 #include <stdio.h>
-int main(__file__)
+int main()
 {
 
-	printf("%d/n", __file__);
+	printf("%d/n", __FILE__);
 	return (0);
 }
