@@ -1,6 +1,6 @@
 #include <stdio.h>
-int main(__attribute__((unused)) int argc, char argv)
+int main()
 {
-	printf("%s", argv[0]);
+	printf("%s/n", __file__);
 	return (0);
 }
