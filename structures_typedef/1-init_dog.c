@@ -11,8 +11,8 @@
 void init_dog(struct dog *d, char *name, float age, char *owner);
 {
 	dog = &my_dog;
-	dog->.name = name;
-	dog->.age = age;
-	dog->.owner = owner;
+	my_dog->.name = name;
+	my_dog->.age = age;
+	my_dog->.owner = owner;
 	return (0);
 }
