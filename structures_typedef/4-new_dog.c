@@ -1,69 +1,80 @@
 #include "dog.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 char *_strdup(char *str);
 /**
- * new_dog - print structure.
- * @name: holds a char
- * @age: holds an int
- * @owner: holds a char
- * Return: 0
+ * new_dog - creates a structure
+ * @name: char
+ * @age: float
+ * @owner: char
+ * Return: a pointer to the struct dog or NULL
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	dog_t *new_d = NULL;
 
-	dog_t *new_dog;
-
-	new_dog = malloc(sizeof(dog_t));
-
-	if (new_dog == NULL)
+	new_d = malloc(sizeof(dog_t));
+	if (new_d != NULL)
 	{
-		return (NULL);
-	}
-	new_dog->name = _strdup(name);
-
-	if (new_dog->name == NULL)
-	{
-		free(new_dog);
-		return (NULL);
-	}
-	new_dog->owner = _strdup(owner);
-	if (new_dog->owner == NULL)
-	{
-		free(new_dog->name);
-		free(new_dog);
-		return (NULL);
-	}
-	new_dog->age = age;
-	return (new_dog);
-}
-char *_strdup(char *str)
-{
-	char *p = NULL;
-	unsigned int i;
-	unsigned int j;
-
-	if (str)
-	{
-		for (j = 0; str[j] != '\0'; j++)
-			continue;
-
-		p = malloc(sizeof(char) * (j + 1));
-
-		if (p == NULL)
+		new_d->name = _strdup(name);
+		if (new_d->name == NULL)
 		{
+			free(new_d);
 			return (NULL);
 		}
-
-		for (i = 0; i < j; i++)
+		new_d->owner = _strdup(owner);
+		if (new_d->owner == NULL)
 		{
-			p[i] = str[i];
+			free(new_d->name);
+			free(new_d);
+			return (NULL);
 		}
-		return (p);
-
+		new_d->age = age;
 	}
-		return (NULL);
+	return (new_d);
+}
 
+/**
+ * _strlen - returns the length of a string.
+ * @s: pointer to check
+ *
+ * Return: Always 0.
+ */
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*s)
+	{
+		len++;
+		s = s + 1;
+	}
+	return (len);
+}
+
+/**
+ * _strdup - copy of the string given as a parameter
+ * @str: string of char
+ *
+ * Description: The _strdup() function returns a pointer to a new string which
+ * is a duplicate of the string str.
+ * Returns NULL if str = NULL
+ *
+ * Return: a pointer to the duplicated string.
+ */
+
+char *_strdup(char *str)
+{
+	char *res = NULL;
+	int i = 0;
+
+	if (str != NULL)
+		res = malloc(_strlen(str) + 1);
+	if (res != NULL)
+	{
+		for (i = 0; i <= _strlen(str); i++)
+			res[i] = str[i];
+	}
+	return (res);
 }
