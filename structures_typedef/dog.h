@@ -2,9 +2,9 @@
 #define dog_h
 /**
  * struct dog - define structure
- * name: variable name
- * age: variable age
- * owner: variable owner
+ * @*name: variable name
+ * @age: variable age
+ * @*owner: variable owner
  * Return: 0
  */
 struct dog
