@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 
 /**
  * init_dog - initialize structure
@@ -8,11 +8,10 @@
  * Return: 0
  */
 
-void init_dog(struct dog *d, char *name, float age, char *owner);
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	dog = &my_dog;
-	my_dog->.name = name;
-	my_dog->.age = age;
-	my_dog->.owner = owner;
-	return (0);
+		
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
