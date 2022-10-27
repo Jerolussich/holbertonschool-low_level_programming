@@ -3,18 +3,20 @@
 #include <stdlib.h>
 
 /**
- * print_dog - print structure
- * @d: structure
+ * new_dog - print structure
+ * @name: holds a char
+ * @age: holds an int
+ * @owner: holds a char
  * Return: 0
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *new_dog;
+	dog_t *new_dog;
 
 	new_dog = malloc(sizeof(struct dog));
 
-	if(new_dog == NULL)
+	if (new_dog == NULL)
 	{
 		return (NULL);
 	}
