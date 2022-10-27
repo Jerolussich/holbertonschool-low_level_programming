@@ -1,3 +1,4 @@
+#include "dog_h"
 #ifndef dog_h
 #define dog_h
 /**
