@@ -4,7 +4,7 @@
 #include <string.h>
 char *_strdup(char *str);
 /**
- * new_dog - print structure
+ * new_dog - print structure.
  * @name: holds a char
  * @age: holds an int
  * @owner: holds a char
