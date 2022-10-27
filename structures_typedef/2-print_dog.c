@@ -2,11 +2,8 @@
 #include <stdio.h>
 
 /**
- * init_dog - initialize structure
+ * print_dog - print structure
  * @d: structure
- * @name: variable name
- * @age: variable age
- * @owner: variable owner
  * Return: 0
  */
 void print_dog(struct dog *d)
@@ -15,21 +12,21 @@ void print_dog(struct dog *d)
 	{
 		if (d->name)
 		{
-			printf("%s", d->name);
+			printf("%s\n", d->name);
 		}
 		else
-			printf("(nil)");
-		if (d->age)
+			printf("Name: (nil)");
+		if (d->age > - 1)
 		{
-			printf("%f", d->age);
+			printf("%f\n", d->age);
 		}
 		else
-			printf("(nil)");
+			printf("Age: (nil)");
 		if (d->owner)
 		{
-			printf("%s", d->owner);
+			printf("%s\n", d->owner);
 		}
 		else
-			printf("(nil)");
+			printf("owner: (nil)");
 	}
 }
