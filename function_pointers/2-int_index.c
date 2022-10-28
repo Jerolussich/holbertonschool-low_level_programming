@@ -5,6 +5,7 @@
  * int_index - execute a function given a parameter on each element.
  * @cmp: pointer to function
  * @size: size of an array
+ * @array: group of numbers
  * Return: cmp returns true if array matches, 0 if not.
  */
 
