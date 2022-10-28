@@ -1,8 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#ifndef function_pointers_h
-#define function_pointers_h
-#endif
 
 /**
  * print_name - print a name 
@@ -14,6 +11,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	if (*name)
+	if (name)
 		(*f)(name);
 }
