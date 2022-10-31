@@ -19,7 +19,7 @@ int op_add(int a, int b)
  * @b:number b
  * Return: substraction of a and b
  **/
-int op_sub(int a, int b)
+int op_sub (int a, int b)
 {
 	int c = 0;
 	c = a - b;
@@ -31,7 +31,7 @@ int op_sub(int a, int b)
  * @b: number b
  * Return: value of a and b multiplied
  */
-int op_mul(int a, int b)
+int op_mul (int a, int b)
 {
 	int c = 0;
 	c = a * b;
@@ -43,7 +43,7 @@ int op_mul(int a, int b)
  * @b: number b
  * Return: value of a divided by b
  */
-int op_div(int a, int b)
+int op_div (int a, int b)
 {
 	if (b != 0)
 	{
@@ -63,7 +63,7 @@ int op_div(int a, int b)
  * @b: number b
  * Return: value of reminder of division of a and b
  */
-int op_mod(int a, int b)
+int op_mod (int a, int b)
 {
 	if (b != 0)
 	{
