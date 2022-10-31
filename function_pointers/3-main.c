@@ -4,11 +4,12 @@
 #include <string.h>
 /**
  * Main - execute calc
- *
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: return 0
  */
 int main (int argc, char **argv)
 {
-
 	int (*f)(int,int);
 
 	if (argc != 4)
