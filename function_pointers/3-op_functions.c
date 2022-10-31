@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * op_add - function that adds a number
@@ -44,9 +45,17 @@ int op_mul(int a, int b)
  */
 int op_div(int a, int b)
 {
-	int c = 0;
-	c = a / b;
-	return (c);
+	if (b != 0)
+	{
+		int c = 0;
+		c = a / b;
+		return (c);
+	}
+	else
+	{
+		printf("Error\n");
+		exit(100);
+	}
 }
 /**
  * op_mod - function that gives remainder of a number
@@ -56,7 +65,15 @@ int op_div(int a, int b)
  */
 int op_mod(int a, int b)
 {
-	int c = 0;
-	c = a % b;
-	return (c);
+	if (b != 0)
+	{
+		int c = 0;
+		c = a % b;
+		return (c);
+	}
+	else
+	{
+		printf("Error\n");
+		exit(100);
+	}
 }

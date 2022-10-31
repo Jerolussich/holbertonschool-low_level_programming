@@ -1,25 +1,28 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "3-calc.h"
+#include <string.h>
 /**
  * Main - execute calc
  *
  */
-int main (int argc, char *agrv)
+int main (int argc, char **argv)
 {
-	if (argc > 5)
+
+	int (*f)(int,int);
+
+	if (argc != 4)
 	{
 		printf("Error\n");
-		return ("98");
+		exit(98);
 	}
-	if (argv[3] != "+" || argv [3] != "-" || argv[3] != "*" || argv[3] != "/" || argv[3] != "%")
+	f = get_op_func(argv[2]);
+
+	if (f == NULL || strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
-		return ("99");
+		exit(99);
 	}
-	if ((argv[3] == "/" || argv[3] == "%") && argv[4] == 0)
-	{
-		printf("Error\n");
-		return ("100");
-	}
-	else
-		(*get_op_func)(atoi(*argv[2])(atoi(*argv[4]);
+	printf("%d\n", f(atoi(argv[1]), atoi(argv[3])));
+	return (0);
 }
