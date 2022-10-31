@@ -3,7 +3,7 @@
 #include "3-calc.h"
 /**
  * *get_op_func - get pointer to function in structure
- * @s: 
+ * @s: the module to operate
  * Return: return pointer to wanted function
  */
 int (*get_op_func(char *s))(int, int)
