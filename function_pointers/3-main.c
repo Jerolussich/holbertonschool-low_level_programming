@@ -8,9 +8,9 @@
  * @argv: argument vector
  * Return: return 0
  */
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
-	int (*f)(int,int);
+	int (*f) (int,int);
 
 	if (argc != 4)
 	{
