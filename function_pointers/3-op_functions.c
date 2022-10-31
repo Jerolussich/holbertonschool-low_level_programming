@@ -10,6 +10,7 @@
 int op_add(int a, int b)
 {
 	int c = 0;
+
 	c = a + b;
 	return (c);
 }
@@ -22,6 +23,7 @@ int op_add(int a, int b)
 int op_sub(int a, int b)
 {
 	int c = 0;
+
 	c = a - b;
 	return (c);
 }
@@ -34,6 +36,7 @@ int op_sub(int a, int b)
 int op_mul(int a, int b)
 {
 	int c = 0;
+
 	c = a * b;
 	return (c);
 }
@@ -48,6 +51,7 @@ int op_div(int a, int b)
 	if (b != 0)
 	{
 		int c = 0;
+
 		c = a / b;
 		return (c);
 	}
