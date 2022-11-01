@@ -10,15 +10,16 @@ void print_all(const char * const format, ...)
 	va_list object;
 	int i = 0;
 	char  *s;
+
 	va_start(object, format);
 
 		while (format[i])
 		{
 			switch (format[i])
-			
+
 			{
 			case 'c':
-				printf("%d", va_arg(object, int));
+				printf("%c", va_arg(object, int));
 				break;
 			case 'i':
 				printf("%d", va_arg(object, int));
