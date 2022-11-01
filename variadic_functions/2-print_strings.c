@@ -10,21 +10,23 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list object;
-
+	char *string;
 		va_start(object, n);
 		for (i = 0; i < n; i++)
 		{
 			if (separator)
 			{
-				if (va_arg(object, char*) != NULL)
+				string = (va_arg(object, char *));
+
+				if (string != NULL)
 				{
 					if (i != n - 1)
 					{
-						printf("%s", va_arg(object, char*));
+						printf("%s", string);
 						printf("%s", separator);
 					}
 					else
-						printf("%s", va_arg(object, char*));
+						printf("%s", string);
 				}
 				else
 				{
@@ -39,7 +41,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}	
 			else
 			{
-				printf("%s", va_arg(object, char*));
+				printf("%s", string);
 			}
 		}
 		printf("\n");
