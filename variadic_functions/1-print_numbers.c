@@ -2,9 +2,9 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
- * sum_them_all - sums all ints from a varaidic function
+ * print_numbers - print numbers
  * @n: number of int
- * Return: return sum of all values
+ * @separator: string
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -16,13 +16,19 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			if (separator)
 			{
-				printf("%d", va_arg(pointer, const unsigned int));
-				printf("%s", separator);
+				if (i != n - 1)
+				{
+					printf("%d", va_arg(pointer, const unsigned int));
+					printf("%s", separator);
+				}
+				else	
+					printf("%d", va_arg(pointer, const unsigned int));
 			}
 			else
 			{
 				printf("%d", va_arg(pointer, const unsigned int));
 			}
 		}
+		printf("\n");
 		va_end(pointer);
 }
