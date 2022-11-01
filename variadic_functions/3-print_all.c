@@ -12,11 +12,11 @@ void print_all(const char * const format, ...)
 	char  *s;
 
 	va_start(object, format);
-
+	if (format)
+	{
 		while (format[i])
 		{
 			switch (format[i])
-
 			{
 			case 'c':
 				printf("%c", va_arg(object, int));
@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 				s ? printf("%s", s) : printf("(nil)");
 				break;
 			}
-			if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format [i] == 's') && format[i + 1])
+			if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') && format[i + 1])
 			{
 				printf(", ");
 			}
@@ -40,4 +40,5 @@ void print_all(const char * const format, ...)
 		}
 		va_end(object);
 		printf("\n");
+	}
 }
