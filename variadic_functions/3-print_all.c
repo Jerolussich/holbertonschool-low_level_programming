@@ -2,32 +2,32 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
- * print_strings - print strings
- * @n: number of int
- * @separator: string
+ * print_all - print everything
+ * @format: type of arguments
  */
 void print_all(const char * const format, ...)
 {
 	va_list object;
 	int i = 0;
-	char * s;
-	va_start(object, format);
+	char  *s;
+	va_start (object, format);
 
 		while (format[i])
 		{
-			switch(format[i]) {
+				switch (format[i]) 
+				{
 				case 'c':
-					printf("%d\n", va_arg(object, int));
+					printf("%d", va_arg(object, int));
 					break;
 				case 'i':
-					printf("%d\n", va_arg(object, int));
+					printf("%d", va_arg(object, int));
 					break;
 				case 'f':
-					printf("%f\n", va_arg(object, double));
+					printf("%f", va_arg(object, double));
 					break;
 				case 's':
 					s = va_arg(object, char *);
-					printf("%s\n", s = NULL ? "(nil)\n" : s);
+					printf("%s", s = NULL ? "(nil)" : s);
 					break;
 				}
 			i++;
