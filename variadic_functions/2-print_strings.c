@@ -16,15 +16,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			if (separator)
 			{
-				if (object != NULL)
+				if (va_arg(object, char*) != NULL)
 				{
 					if (i != n - 1)
 					{
-						printf("%d", va_arg(object, const unsigned int));
+						printf("%s", va_arg(object, char*));
 						printf("%s", separator);
 					}
 					else
-						printf("%d", va_arg(object, const unsigned int));
+						printf("%s", va_arg(object, char*));
 				}
 				else
 				{
@@ -39,7 +39,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}	
 			else
 			{
-				printf("%d", va_arg(object, const unsigned int));
+				printf("%s", va_arg(object, char*));
 			}
 		}
 		printf("\n");
