@@ -8,24 +8,22 @@
  */
 void print_all(const char * const format, ...)
 {
-	char c = 0;
-	int i = 0;
-	char * s = 0;
 	va_list object;
-
+	int i = 0;
+	char * s;
 	va_start(object, format);
 
-		while (string[i])
+		while (format[i])
 		{
-			switch(c) {
+			switch(format[i]) {
 				case 'c':
-					printf("%d\n", va_arg(object, int);
+					printf("%d\n", va_arg(object, int));
 					break;
 				case 'i':
-					printf("%s\n", va_arg(object, int);
+					printf("%d\n", va_arg(object, int));
 					break;
 				case 'f':
-					printf("%f\n", va_arg(object, double);
+					printf("%f\n", va_arg(object, double));
 					break;
 				case 's':
 					s = va_arg(object, char *);
