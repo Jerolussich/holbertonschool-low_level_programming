@@ -14,10 +14,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		va_start(object, n);
 		for (i = 0; i < n; i++)
 		{
+
+			string = (va_arg(object, char *));
 			if (separator)
 			{
-				string = (va_arg(object, char *));
-
 				if (string != NULL)
 				{
 					if (i != n - 1)
