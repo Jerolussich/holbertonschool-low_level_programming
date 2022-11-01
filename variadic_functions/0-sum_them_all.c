@@ -3,7 +3,8 @@
 #include <stdarg.h>
 /**
  * sum_them_all - sums all ints from a varaidic function
- *
+ * @n: number of int
+ * Return: return sum of all values
  */
 int sum_them_all(const unsigned int n, ...)
 {
