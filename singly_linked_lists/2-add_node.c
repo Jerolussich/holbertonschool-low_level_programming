@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
  * add_node - print single listed data
- * @str: string 
+ * head: singly list
+ * @str: string
  * Return: modules found
  */
 
@@ -21,7 +22,7 @@ list_t *add_node(list_t **head, const char *str)
 		(*head)->next = NULL;
 	}
 	else
-	{	
+	{
 		pointerchain->next = *head;
 		pointerchain->str = strdup(str);
 		pointerchain->len = strlen(str);
