@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- * print_list - print single listed data
- * @h: pointer to a module
+ * add_node - print single listed data
+ * @str: string 
  * Return: modules found
  */
 
@@ -11,11 +11,12 @@ list_t *add_node(list_t **head, const char *str)
 
 	pointerchain = malloc(sizeof(list_t));
 	if (!pointerchain)
+	{
+		free(pointerchain);
 		return (NULL);
-	
+	}
 	if (!head)
 	{
-		*head = pointerchain;
 		(*head)->str = strdup(str);
 		(*head)->next = NULL;
 	}
@@ -23,7 +24,9 @@ list_t *add_node(list_t **head, const char *str)
 	{	
 		pointerchain->next = *head;
 		pointerchain->str = strdup(str);
+		pointerchain->len = strlen(str);
 	}
+	*head = pointerchain;
 
 	return (*head);
 }
