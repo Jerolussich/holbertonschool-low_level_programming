@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * add_node - print single listed data
- * head: singly list
+ * @head: singly list
  * @str: string
  * Return: modules found
  */
