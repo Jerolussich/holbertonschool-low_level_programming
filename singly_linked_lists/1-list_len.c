@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_list - print single listed data
+ * list_len - print single listed data
  * @h: pointer to a module
  * Return: modules found
  */
