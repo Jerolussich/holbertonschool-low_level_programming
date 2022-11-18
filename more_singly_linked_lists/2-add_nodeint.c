@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node - print single listed data
+ * add_nodeint - print int node list
  * @head: singly list
  * @n: int given
  * Return: modules found
