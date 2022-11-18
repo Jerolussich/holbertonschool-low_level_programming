@@ -16,7 +16,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		add_node(head, str);
 		return (*head);
-			
+
 	}
 	while (h->next)
 	{
@@ -28,7 +28,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(pointerchain);
 		return (NULL);
 	}
-	
+
 	pointerchain->str = strdup(str);
 	pointerchain->len = strlen(str);
 	pointerchain->next = NULL;
