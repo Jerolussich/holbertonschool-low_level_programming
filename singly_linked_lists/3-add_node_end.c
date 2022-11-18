@@ -1,4 +1,5 @@
 #include "lists.h"
+#include "2-add_node.c"
 /**
  * add_node_end - add node on end of list
  * @head: singly list
@@ -11,6 +12,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *pointerchain = NULL;
 	list_t *h = *head;
 
+	if (!h)
+	{
+		add_node(head, str);
+		return (*head);
+			
+	}
 	while (h->next)
 	{
 		h = h->next;
@@ -21,20 +28,15 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(pointerchain);
 		return (NULL);
 	}
+	
+	pointerchain->str = strdup(str);
+	pointerchain->len = strlen(str);
+	pointerchain->next = NULL;
+
 	if (!head)
-	{
-		pointerchain->str = strdup(str);
-		pointerchain->next = NULL;
-		pointerchain->len = strlen(str);
 		*head = pointerchain;
-	}
 	else
-	{
 		h->next = pointerchain;
-		pointerchain->next = NULL;
-		pointerchain->str = strdup(str);
-		pointerchain->len = strlen(str);
-	}
 
 	return (pointerchain);
 }
