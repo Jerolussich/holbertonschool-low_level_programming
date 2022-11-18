@@ -1,9 +1,9 @@
 #include "lists.h"
 #include "2-add_nodeint.c"
 /**
- * add_node_end - add node on end of list
+ * add_nodeint_end - add node on end of list
  * @head: singly list
- * @str: string
+ * @n: int const
  * Return: modules found
  */
 
