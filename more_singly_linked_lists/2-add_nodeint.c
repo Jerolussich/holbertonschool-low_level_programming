@@ -2,7 +2,7 @@
 /**
  * add_node - print single listed data
  * @head: singly list
- * @str: string
+ * @n: int given
  * Return: modules found
  */
 
