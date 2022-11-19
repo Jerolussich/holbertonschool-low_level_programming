@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - return a node 
+ * get_nodeint_at_index - return a node
  * @head: singly list
+ * @index: node to be found
  * Return: head node data or 0 if singly list is empty
  */
 
@@ -12,7 +13,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	if (!h)
 		return (0);
-	while (h->next)
+	while (h->next && i < index)
 	{
 		h = h->next;
 		i++;
