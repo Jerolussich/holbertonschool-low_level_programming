@@ -3,7 +3,8 @@
  *  insert_nodeint_at_index - return a node
  * @head: singly liist
  * @idx: position of node to be added
- * Return: head node data or 0 if singly list is empty
+ * @n: int value to node
+ * Return: new head node data or 0 if singly list is empty
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -20,26 +21,29 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (*head);
 	}
 
-	 while (h->next && i < idx)
-        {
-                h = h->next;
-		i++;
-        }
-	 while (b->next && j < (idx - 1))
-        {
-                b = b->next;
-                j++;
-        }
-	
-	pointerchain = malloc(sizeof(listint_t));
-	if (!pointerchain)
+	else
 	{
-		free(pointerchain);
-		return (NULL);
+		while (h->next && i < idx)
+		{
+			h = h->next;
+			i++;
+		}
+		while (b->next && j < (idx - 1))
+		{
+			b = b->next;
+			j++;
+       		}
+	
+		pointerchain = malloc(sizeof(listint_t));
+		if (!pointerchain)
+		{
+			free(pointerchain);
+			return (NULL);
+		}
+		pointerchain->n = n;
+		pointerchain->next = h;
+		b->next = pointerchain;
 	}
-	pointerchain->n = n;
-	pointerchain->next = h;
-	b->next = pointerchain;
 	
 	return (pointerchain);
 }
