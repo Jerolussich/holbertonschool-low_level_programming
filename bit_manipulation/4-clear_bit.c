@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * set_bit - print binary representation of a number
+ * clear_bit - print binary representation of a number
  * @n: unsigned long int n
  * @index: place to check
  * Return: return 1 or - 1
