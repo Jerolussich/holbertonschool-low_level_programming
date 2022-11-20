@@ -4,8 +4,8 @@
 
 /**
  * print_binary - print binary representation of a number
- * @b: binary number
- * Return: value of int
+ * @n: int number
+ * Return: non
  */
 
 void print_binary(unsigned long int n)
