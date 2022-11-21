@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * read_textfile: read text file with certain letters
+ * @filename: pointer to file
+ * @letters: letters to print
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -13,21 +13,21 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		return (0);
 	fp = open(filename, O_RDONLY);
-	if (fp == - 1)
+	if (fp == -1)
 		return (-1);
 
 	buf = malloc(letters + 1);
 	if (!buf)
 		return (-1);
 	rd = read(fp, buf, letters);
-	if (rd == - 1)
+	if (rd == -1)
 		return (-1);
 	buf[letters + 1] = '\0';
 	close(fp);
 
 	wr = write(STDOUT_FILENO, buf, rd);
-	if (wr == - 1)
-		return (-1);
+	if (wr == -1)
+		return (-0);
 	free(buf);
 	return (rd);
 }
