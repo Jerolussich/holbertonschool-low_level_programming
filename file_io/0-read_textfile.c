@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * read_textfile: read text file with certain letters
+ * read_textfile - read text file with certain letters
  * @filename: pointer to file
  * @letters: letters to print
+ * Return: actual number of letters or 0
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
