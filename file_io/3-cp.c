@@ -18,36 +18,38 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		return (97);
 	}
+
 	if (!argv[1])/*if file_from does not exist, exit with code 98*/
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE1\n");
 		return (98);
 	}
-		pp = open(argv[2],O_WRONLY | O_TRUNC | O_CREAT, 0664);
-		if (pp == -1)/*if failed to open pp*/
-		{
+
+	pp = open(argv[2],O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	if (pp == -1)/*if failed to open pp*/
+	{
 		dprintf(STDERR_FILENO,"Error: Can't write to NAME_OF_THE_FILE\n");
 		return (99);
-		}
+	}
+
 	fp = open(argv[1], O_WRONLY);
 	if (fp == -1)/*if failed to open fp*/
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE2\n");
 		return (98);
 	}
 	rd = read(fp, buf, 1024);
 	if (rd == -1)/*if failed to read*/
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE3\n");
 		return (98);
-		/*if file_form can't not read it*/
 	}
 	if (fp == -1)/*if you can not create or if write to file_to fails, exit with code 99*/
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
 		return (99);
 	}
-	wr = write(pp, buf, 1024);
+	wr = write(pp, buf, rd);
 	if (wr == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
