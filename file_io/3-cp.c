@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		return (99);
 	}
 
-	fp = open(argv[1], O_WRONLY);
+	fp = open(argv[1], O_RDWR);
 	if (fp == -1)/*if failed to open fp*/
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE2\n");
