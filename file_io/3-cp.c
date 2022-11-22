@@ -56,15 +56,16 @@ int main(int argc, char *argv[])
 		}
 	}
 	cl = close(fp);
-	if (close == -1)
+	if (cl == -1)
 	{
 
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fp);
 		return (100);
+	}
 	cl1 = close(pp);
-	if (close1 == -1)
+	if (cl1 == -1)
 	{
-		dprint(STDERR_FILENO, "Error: Can't close fd %d\n", pp)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", pp);
 		return (100);
 	}
 	return (0);
