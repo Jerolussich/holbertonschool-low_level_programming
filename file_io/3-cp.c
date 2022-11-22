@@ -38,6 +38,8 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE2\n");
 		return (98);
 	}
+	rd = read(fp, buf, 1024);
+	
 	while (rd != 0)
 	{
 		rd = read(fp, buf, 1024);
@@ -46,17 +48,12 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE3\n");
 			return (98);
 		}
-	}
-	if (fp == -1)/*if you can not create or if write to file_to fails, exit with code 99*/
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
-		return (99);
-	}
-	wr = write(pp, buf, rd);
-	if (wr == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
-		return (99);
+		wr = write(pp, buf, rd);
+		if (wr == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
+			return (99);
+		}
 	}
 	close(fp);
 	close(pp);
