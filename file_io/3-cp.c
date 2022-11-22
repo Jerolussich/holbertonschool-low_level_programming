@@ -2,9 +2,9 @@
 #include "string.h"
 
 /**
- * append_text_to_file - append text to file
- * @filename: pointer to file
- * @text_content: letters to add to file
+ * main - append text to file
+ * @argc: argument counter
+ * @argv: argument vector
  * Return: 1 or -1 if failed
  */
 int main(int argc, char *argv[])
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
-	pp = open(argv[2],O_RDWR | O_TRUNC | O_CREAT, 0664);
+	pp = open(argv[2],O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (pp == -1)/*if failed to open pp*/
 	{
 		dprintf(STDERR_FILENO,"Error: Can't write to %s\n", argv[2]);
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 			return (99);
 		}
 		rd = read(fp, buf, 1024);
-		if (rd == -1)/*if failed to read*/
+		if (rd == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			return (98);
