@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int fp = 0,rd = 0, wr = 0, pp = 0;
+	int fp = 0,rd = 0, wr = 0, pp = 0, close = 0, close1;
 	char *buf[1024];
 
 	
@@ -55,11 +55,16 @@ int main(int argc, char *argv[])
 			return (98);
 		}
 	}
-	close(fp);
-	close(pp);
-	if (close == -1)/*if you can not close a file descriptor , exit with code 100*/
+	close = close(fp);
+	if (close == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", close);
+
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fp);
+		return (100);
+	close1 =close(pp);
+	if (close1 == -1)
+	{
+		dprint(STDERR_FILENO, "Error: Can't close fd %d\n", pp)
 		return (100);
 	}
 	return (0);
