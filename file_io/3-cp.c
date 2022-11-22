@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 		wr = write(pp, buf, rd);
 		if (wr == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to");
 			return (99);
 		}
 		rd = read(fp, buf, 1024);
