@@ -28,8 +28,8 @@ int main(int argc, char *argv[])
 	pp = open(argv[2],O_RDWR | O_TRUNC | O_CREAT, 0664);
 	if (pp == -1)/*if failed to open pp*/
 	{
-		dprintf(STDERR_FILENO,"Error: Can't write to %s\n", argv[2]);
-		return (99);
+		dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", argv[1]);
+		return (98);
 	}
 
 	fp = open(argv[1], O_RDONLY);
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 		wr = write(pp, buf, rd);
 		if (wr == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to test %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			return (99);
 		}
 		rd = read(fp, buf, 1024);
