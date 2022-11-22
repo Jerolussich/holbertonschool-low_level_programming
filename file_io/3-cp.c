@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
-	pp = open(argv[2],O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	pp = open(argv[2],O_RDWR | O_TRUNC | O_CREAT, 0664);
 	if (pp == -1)/*if failed to open pp*/
 	{
 		dprintf(STDERR_FILENO,"Error: Can't write to NAME_OF_THE_FILE\n");
@@ -42,24 +42,25 @@ int main(int argc, char *argv[])
 	
 	while (rd != 0)
 	{
-		rd = read(fp, buf, 1024);
-		if (rd == -1)/*if failed to read*/
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE3\n");
-			return (98);
-		}
 		wr = write(pp, buf, rd);
 		if (wr == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
+
+			dprintf(STDERR_FILENO, "Error: Can't write to test_folder/textfile_0_copy_3\n");
 			return (99);
+		}
+		rd = read(fp, buf, 1024);
+		if (rd == -1)/*if failed to read*/
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file test_folder/textfile_0\n");
+			return (98);
 		}
 	}
 	close(fp);
 	close(pp);
 	if (fp == -1 || pp == -1)/*if you can not close a file descriptor , exit with code 100*/
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE");
+		dprintf(STDERR_FILENO, "Error: Can't close fd");
 		return (100);
 	}
 	return (0);
