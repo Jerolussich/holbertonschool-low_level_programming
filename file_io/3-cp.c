@@ -23,17 +23,12 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		return (98);
 	}
-	if (!argv[2])
-	{
-		pp = open(argv[2], O_CREAT, 0664);
-	}
-	else  /*if file_to already exists, truncate it*/
-		pp = open(argv[2], O_WRONLY | O_TRUNC);
-	if (pp == -1)/*if failed to open pp*/
-	{
+		pp = open(argv[2],O_WRONLY | O_TRUNC | O_CREAT, 0664);
+		if (pp == -1)/*if failed to open pp*/
+		{
 		dprintf(STDERR_FILENO,"Error: Can't write to NAME_OF_THE_FILE\n");
 		return (99);
-	}
+		}
 	fp = open(argv[1], O_WRONLY);
 	if (fp == -1)/*if failed to open fp*/
 	{
