@@ -2,10 +2,10 @@
 #include "string.h"
 
 /**
- * create_file - create file with certain content
+ * append_text_to_file - append text to file
  * @filename: pointer to file
  * @text_content: letters to add to file
- * Return: actual number of letters or 0
+ * Return: 1 or -1 if failed
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
