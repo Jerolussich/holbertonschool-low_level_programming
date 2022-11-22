@@ -32,17 +32,20 @@ int main(int argc, char *argv[])
 		return (99);
 	}
 
-	fp = open(argv[1], O_RDWR);
+	fp = open(argv[1], O_RDONLY);
 	if (fp == -1)/*if failed to open fp*/
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE2\n");
 		return (98);
 	}
-	rd = read(fp, buf, 1024);
-	if (rd == -1)/*if failed to read*/
+	while (rd != 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE3\n");
-		return (98);
+		rd = read(fp, buf, 1024);
+		if (rd == -1)/*if failed to read*/
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE3\n");
+			return (98);
+		}
 	}
 	if (fp == -1)/*if you can not create or if write to file_to fails, exit with code 99*/
 	{
