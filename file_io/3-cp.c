@@ -45,8 +45,8 @@ int main(int argc, char *argv[])
 		wr = write(pp, buf, rd);
 		if (wr == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-			return (98);
+			dprintf(STDERR_FILENO, "Error: Can't write to test %s\n", argv[2]);
+			return (99);
 		}
 		rd = read(fp, buf, 1024);
 		if (rd == -1)/*if failed to read*/
@@ -57,9 +57,9 @@ int main(int argc, char *argv[])
 	}
 	close(fp);
 	close(pp);
-	if (fp == -1 || pp == -1)/*if you can not close a file descriptor , exit with code 100*/
+	if (close == -1)/*if you can not close a file descriptor , exit with code 100*/
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd");
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", close);
 		return (100);
 	}
 	return (0);
