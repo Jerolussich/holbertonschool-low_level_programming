@@ -21,21 +21,21 @@ int main(int argc, char *argv[])
 
 	if (!argv[1])/*if file_from does not exist, exit with code 98*/
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE1\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n");
 		return (98);
 	}
 
 	pp = open(argv[2],O_RDWR | O_TRUNC | O_CREAT, 0664);
 	if (pp == -1)/*if failed to open pp*/
 	{
-		dprintf(STDERR_FILENO,"Error: Can't write to NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO,"Error: Can't write to %s\n");
 		return (99);
 	}
 
 	fp = open(argv[1], O_RDONLY);
 	if (fp == -1)/*if failed to open fp*/
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE2\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %S\n");
 		return (98);
 	}
 	rd = read(fp, buf, 1024);
@@ -46,13 +46,13 @@ int main(int argc, char *argv[])
 		if (wr == -1)
 		{
 
-			dprintf(STDERR_FILENO, "Error: Can't write to test_folder/textfile_0_copy_3\n");
-			return (99);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n");
+			return (98);
 		}
 		rd = read(fp, buf, 1024);
 		if (rd == -1)/*if failed to read*/
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file test_folder/textfile_0\n");
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n");
 			return (98);
 		}
 	}
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 	close(pp);
 	if (fp == -1 || pp == -1)/*if you can not close a file descriptor , exit with code 100*/
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd");
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n");
 		return (100);
 	}
 	return (0);
