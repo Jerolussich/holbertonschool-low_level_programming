@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 	rd = read(fp, buf, 1024);
 	if (rd == -1)
 	{
-		dprintf(STDERR_FILENO,"Error: Cant't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", argv[1]);
 		return (98);
 	}
 	while (rd != 0)
