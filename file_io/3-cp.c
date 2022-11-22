@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	{
 		pp = open(argv[2], O_CREAT, 0664);
 	}
-	else (argv[2]) /*if file_to already exists, truncate it*/
+	else  /*if file_to already exists, truncate it*/
 		pp = open(argv[2], O_WRONLY | O_TRUNC);
 	if (pp == -1)/*if failed to open pp*/
 	{
