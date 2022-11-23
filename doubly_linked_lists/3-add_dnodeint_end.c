@@ -1,10 +1,10 @@
 #include "lists.h"
 #include "2-add_dnodeint.c"
 /**
- * add_nodeint_end - add node on end of list
+ * add_dnodeint_end - add node on end of list
  * @head: linked list
  * @n: int const
- * Return: modules found
+ * Return: address of the new element
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
@@ -18,9 +18,8 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	{
 		add_dnodeint(head, n);
 		return (*head);
-
 	}
-	while (h->next)
+	while (h)
 	{
 		h = h->next;
 		i++;
@@ -36,15 +35,10 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		free(pointerchain);
 		return (NULL);
 	}
-
 	pointerchain->n = n;
 	pointerchain->next = NULL;
 	pointerchain->prev = b;
-
-	if (!head)
-		*head = pointerchain;
-	else
-		h->next = pointerchain;
+	h->next = pointerchain;
 
 	return (pointerchain);
 }
