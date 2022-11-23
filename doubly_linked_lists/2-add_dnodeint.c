@@ -8,9 +8,9 @@
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	listint_t *pointerchain = NULL;
+	dlistint_t *pointerchain = NULL;
 
-	pointerchain = malloc(sizeof(listint_t));
+	pointerchain = malloc(sizeof(dlistint_t));
 	if (!pointerchain)
 	{
 		free(pointerchain);
