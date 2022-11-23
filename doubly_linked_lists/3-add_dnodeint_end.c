@@ -11,7 +11,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *pointerchain = NULL;
 	dlistint_t *h = *head;
-	dlistint_t *b = *head;
 	int i = 0;
 
 	if (!h)
