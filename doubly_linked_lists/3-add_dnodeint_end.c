@@ -12,7 +12,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	dlistint_t *pointerchain = NULL;
 	dlistint_t *h = *head;
 	dlistint_t *b = *head;
-	int i = 0, j = 0;
+	int i = 0;
 
 	if (!h)
 	{
@@ -24,11 +24,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		h = h->next;
 		i++;
 	}
-	while (j < i - 1)
-	{
-		b = h->next;
-		j++;
-	}
 	pointerchain = malloc(sizeof(dlistint_t));
 	if (!pointerchain)
 	{
@@ -37,8 +32,8 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	pointerchain->n = n;
 	pointerchain->next = NULL;
-	pointerchain->prev = b;
-	b->next = pointerchain;
+	pointerchain->prev = h;
+	h->next = pointerchain;
 	if (!head)
 		*head = pointerchain;
 	else
