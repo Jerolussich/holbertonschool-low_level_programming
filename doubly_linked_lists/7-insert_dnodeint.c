@@ -21,19 +21,19 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	pointerchain->n = n;
 	if (idx == 0)
 	{
-		pointerchain->next = h;
+		pointerchain->next = h1;
 		pointerchain->prev = NULL;
 		*head = pointerchain;
 		return (pointerchain);
 	}
 	for (i = 0; i < idx - 1; i++)
 	{
-		if (h->next == NULL)
+		if (h1->next == NULL)
 			return (NULL);
 		h = h->next;
 	}
-	pointerchain->next = h->next;
-	pointerchain->prev = h;
-	h->next = pointerchain;
+	pointerchain->next = h1->next;
+	pointerchain->prev = h1;
+	h1->next = pointerchain;
 	return (pointerchain);
 }
