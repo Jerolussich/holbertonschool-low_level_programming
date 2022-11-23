@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int fp = 0,rd = 0, wr = 0, pp = 0, cl1;
+	int fp = 0,rd = 0, wr = 0, pp = 0;
 	char *buf[1024];
 
 	if (argc != 3)/*if the number of argument is not the correct one, exit with code 97*/
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	}
 	if ((close(fp)) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fp), exit(100);
-	if ((close1(pp)) == -1)
+	if ((close(pp)) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", pp), exit(100);
 	return (0);
 }
