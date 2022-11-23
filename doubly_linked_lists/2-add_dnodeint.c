@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_nodeint - add node at the beginning
+ * add_dnodeint - add node at the beginning
  * @head: linked list
  * @n: int given
  * Return: address of the new element
@@ -13,16 +13,21 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	pointerchain = malloc(sizeof(dlistint_t));
 	if (!pointerchain)
 	{
-		free(pointerchain);
 		return (NULL);
 	}
-	else
+	if (!*head)
 	{
 		pointerchain->prev = NULL;
 		pointerchain->next = *head;
 		pointerchain->n = n;
+		*head = pointerchain;
 	}
-	*head = pointerchain;
-
+	else
+	{
+		pointerchain->next = *head;
+		pointerchain->n = n;
+		*head = pointerchain;
+		(*head)->prev = pointerchain;
+	}
 	return (*head);
 }
