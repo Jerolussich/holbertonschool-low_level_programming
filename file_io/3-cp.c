@@ -22,9 +22,8 @@ int main(int argc, char *argv[])
 	fp = open(argv[1], O_RDONLY);
 	if (fp == -1)/*if failed to open fp*/
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
-	while (rd != 0)
+	while ((rd = read(fp, buf, 1024)) != 0)
 	{
-		rd = read(fp, buf, 1024);
 		if (rd == -1)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 		wr = write(pp, buf, rd);
