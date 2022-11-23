@@ -19,7 +19,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		add_dnodeint(head, n);
 		return (*head);
 	}
-	while (h)
+	while (h->next)
 	{
 		h = h->next;
 		i++;
@@ -38,6 +38,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	pointerchain->n = n;
 	pointerchain->next = NULL;
 	pointerchain->prev = b;
+	b->next = pointerchain;
 	if (!head)
 		*head = pointerchain;
 	else
