@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * get_dnodeint_at_index - return a node
- * @head: singly list
+ * @head: linked list
  * @index: node to be found
  * Return: head node data or 0 if singly list is empty
  */
