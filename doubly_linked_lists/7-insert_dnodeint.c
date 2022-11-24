@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- *  insert_dnodeint_at_index - return a node
- * @head: linked liist
+ * insert_dnodeint_at_index - return a node
+ * @h: linked liist
  * @idx: position of node to be added
  * @n: int value to node
  * Return: new head node data or 0 if linked list is empty
