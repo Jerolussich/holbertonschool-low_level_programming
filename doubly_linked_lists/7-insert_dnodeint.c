@@ -35,7 +35,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	pointerchain->next = h1->next;
 	pointerchain->prev = h1;
 	h1->next = pointerchain;
-	h = h1->next;
+	h1 = h1->next;
 	h1->prev = pointerchain;
 	return (pointerchain);
 }
