@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	pointerArray = ht->array[hash];
 
 	if (pointerArray && strcmp(pointerArray->key, key) == 0)
-			pointerArray->value = strdup(value);
+		pointerArray->value = strdup(value);
 	else
 	{
 		node = malloc(sizeof(hash_node_t));
