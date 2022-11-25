@@ -5,6 +5,7 @@
  * @ht: given hash table
  * @key: key of the node
  * @value: value of the key node
+ * Return: 1 if succesful or 0 if not
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -28,17 +29,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node->key = strdup(key);
 	if (node->key == 0)
 		return (0);
-	node->next = NULL;
+
 	if (!ht->array[hash])
+	{
 		ht->array[hash] = node;
+		node->next = NULL;
+	}
 	else
 	{
 		h = ht->array[hash];
-		while (h->next)
-		{
-			h = h->next;
-		}
-		h->next = node;
+		node->next = h;
+		ht->array[hash] = node;
 	}
 	return (1);
 }
