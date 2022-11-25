@@ -18,13 +18,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash = key_index((unsigned char *) key, size);
 	pointerArray = ht->array[hash];
 
-	if (pointerArray)
-	{
-		if (strcmp(pointerArray->key, key) == 0)
+	if (pointerArray && strcmp(pointerArray->key, key) == 0)
 			pointerArray->value = strdup(value);
-	}
 	else
-	{	
+	{
 		node = malloc(sizeof(hash_node_t));
 		if (!node)
 			return (0);
