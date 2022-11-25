@@ -10,6 +10,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int hash, size;
 	hash_node_t *node;
+	hash_node_t *h;
 
 	if (!key || !ht)
 		return (0);
@@ -31,6 +32,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!ht->array[hash])
 		ht->array[hash] = node;
 	else
-		(*ht->array)->next = node;
+	{
+		h = ht->array[hash];
+		while (h->next)
+		{
+			h = h->next;
+		}
+		h->next = node;
+	}
 	return (1);
 }
