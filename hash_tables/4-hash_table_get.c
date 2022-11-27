@@ -17,11 +17,14 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	hash = key_index((unsigned char *) key, size);
 	pointerArray = ht->array[hash];
 
+	if (!pointerArray)
+		return (0);
+
 	while (pointerArray && strcmp(pointerArray->key, key) != 0)
 	{
 		if (pointerArray->next)
 			pointerArray = pointerArray->next;
-		else 
+		else
 			return (0);
 	}
 	return (pointerArray->value);
