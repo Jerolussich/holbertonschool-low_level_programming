@@ -19,11 +19,11 @@ void hash_table_delete(hash_table_t *ht)
 
 		while (pointerArray)
 		{
+			temp = pointerArray;
 			pointerArray = pointerArray->next;
 			free(temp->key);
 			free(temp->value);
 			free(temp);
-			temp = pointerArray;
 		}
 	}
 	free(ht->array);
