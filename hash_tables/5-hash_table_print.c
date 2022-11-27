@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - get a value of a table
+ * hash_table_print - print table
  * @ht: given hash table
  * Return: value if succesful or 0 if not
  */
@@ -14,7 +14,7 @@ void hash_table_print(const hash_table_t *ht)
 	pointerArray = ht->array[i];
 
 	if (ht)
-	{		
+	{
 		while (pointerArray && i < size)
 		{
 			printf("%s", pointerArray->key);
@@ -22,5 +22,4 @@ void hash_table_print(const hash_table_t *ht)
 			i++;
 		}
 	}
-	printf("test1");
 }
