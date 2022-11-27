@@ -20,10 +20,13 @@ void hash_table_delete(hash_table_t *ht)
 		while (pointerArray)
 		{
 			temp = pointerArray;
+			free(pointerArray->key);
+			free(pointerArray->value);
 			pointerArray = pointerArray->next;
 			free(temp);
 		}
 
 	}
 	free(ht);
+	free(ht->array);
 }
