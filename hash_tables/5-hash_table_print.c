@@ -21,7 +21,7 @@ void hash_table_print(const hash_table_t *ht)
 		while (pointerArray)
 		{
 			
-			printf("'%s':", pointerArray->key);
+			printf("'%s': ", pointerArray->key);
 
 			if (pointerArray->next)
 				printf("'%s',", pointerArray->value);
