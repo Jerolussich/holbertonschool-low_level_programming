@@ -10,10 +10,10 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int i = 0;
 	hash_node_t *pointerArray;
 
-	pointerArray = ht->array[i];
 
 	if (ht)
 	{
+		pointerArray = ht->array[i];
 		while (pointerArray)
 		{
 			printf("%s", pointerArray->key);
