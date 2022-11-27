@@ -1,11 +1,10 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - add en element to the hash table
+ * hash_table_get - get a value of a table
  * @ht: given hash table
  * @key: key of the node
- * @value: value of the key node
- * Return: 1 if succesful or 0 if not
+ * Return: value if succesful or 0 if not
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -20,10 +19,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	while (pointerArray && strcmp(pointerArray->key, key) != 0)
 	{
-		if (pointerArray && strcmp(pointerArray->key, key) == 0)
-			return (pointerArray->value);
-		else if (pointerArray->next)
+		if (pointerArray->next)
 			pointerArray = pointerArray->next;
+		else 
+			return (0);
 	}
-	return (0);
+	return (pointerArray->value);
 }
