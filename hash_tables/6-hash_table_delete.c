@@ -23,7 +23,7 @@ void hash_table_delete(hash_table_t *ht)
 			free(pointerArray->key);
 			free(pointerArray->value);
 			free(pointerArray);
-			pointerArray = temp->next;
+			pointerArray = temp;
 		}
 
 	}
