@@ -9,7 +9,6 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i = 0, size;
 	hash_node_t *pointerArray;
-	
 
 	if (ht)
 	{
@@ -18,8 +17,8 @@ void hash_table_print(const hash_table_t *ht)
 
 		while (pointerArray && i < size)
 		{
-			printf("%s", pointerArray->key);
-			printf("%s", pointerArray->value);
+			printf("%s\n", pointerArray->key);
+			printf("%s\n", pointerArray->value);
 		}
 		i++;
 	}
