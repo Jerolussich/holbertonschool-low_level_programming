@@ -7,7 +7,7 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned int i = 0;
+	unsigned int i = 0, j = 0;
 	hash_node_t *pointerArray;
 
 	if (!ht)
@@ -20,14 +20,11 @@ void hash_table_print(const hash_table_t *ht)
 
 		while (pointerArray)
 		{
-			printf("'%s': ", pointerArray->key);
-
-			if (pointerArray->next)
-				printf("'%s', ", pointerArray->value);
-			else 
-				printf("'%s'", pointerArray->value);
-
+			if (j == 1)
+				printf(", ");
+			printf("'%s' : '%s'", pointerArray->key, pointerArray->value);
 			pointerArray = pointerArray->next;
+			j = 1;
 		}
 
 	}
